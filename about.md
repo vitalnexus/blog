@@ -6,9 +6,19 @@ permalink: /about/
 
 # About This Blog
 
-This is a Jekyll-based blog clone inspired by Vitalik Buterin's personal blog, showcasing a clean, minimalist design with full dark mode support.
+Welcome to my corner of the internet. This blog is a space to share insights, experiences, and knowledge about technology, IT services, and digital transformation. Rather than being a clone of anyone else's work, this is **my realm** — a reflection of my journey in Information Technology and web services.
 
-## Features
+I'm passionate about helping businesses and individuals navigate the digital landscape through comprehensive IT services, web solutions, and technology support. This blog documents my thoughts, guides, and explorations in the tech world.
+
+## About Me
+
+I run **ITSaS (Information Technology Services and Solutions)**, providing comprehensive technology support across three main areas:
+
+- **Internet Services**: Website design, domain registration, hosting, e-commerce solutions, and digital branding
+- **IT Operations**: Systems administration, data networks, virtualization, and cloud services
+- **IT Support**: Help desk support, asset management, user administration, and security management
+
+## Blog Features
 
 - **Light & Dark Mode**: Toggle between light and dark themes with persistent preferences stored locally
 - **Responsive Design**: Optimized for desktop, tablet, and mobile devices
@@ -20,7 +30,7 @@ This is a Jekyll-based blog clone inspired by Vitalik Buterin's personal blog, s
 ## Theme Colors
 
 - **Light Mode**: Clean white background with dark text
-- **Dark Mode**: Pure black background (#000000) with Vitalik's signature green text (#3EAF4A)
+- **Dark Mode**: Pure black background (#000000) with a professional green accent text (#3EAF4A)
 
 ## Technology Stack
 

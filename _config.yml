@@ -1,8 +1,8 @@
-title: Vitalik's Blog Clone
-description: A functional blog with light/dark mode support, inspired by Vitalik Buterin's blog
-author: Your Name
-url: https://your-domain.com
-baseurl: ""  # Change to /blog if hosting as a subdirectory on GitHub Pages
+title: Vitalnexus - My Realm
+description: Exploring technology, IT services, and digital solutions
+author: Vitalnexus
+url: https://vitalnexus.github.io
+baseurl: /blog
 
 # Jekyll settings
 theme: minima
