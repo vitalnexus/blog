@@ -1,5 +1,5 @@
 /* ============================================
-   LOOK INTO MY REAL - Site JavaScript
+   Look Into My Realm - Site JavaScript
    Star field, navigation, matrix easter egg
    ============================================ */
 
@@ -82,7 +82,7 @@
     }
 
     // Custom characters - GAM3RGAWD themed
-    var chars = 'GAM3RGAWD LOOK INTO MY REAL 01 VOID SPACE NEXUS LEVEL22 STEAM CAVE DWELLER ';
+    var chars = 'GAM3RGAWD Look Into My Realm 01 VOID SPACE NEXUS LEVEL22 STEAM CAVE DWELLER ';
     chars = chars.split('');
 
     function draw() {

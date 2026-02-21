@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Look Into My Real
+title: Look Into My Realm
 ---
 
 <div class="hero">
-  <h1 class="hero-title glitch" data-text="Look Into My Real">Look Into My Real</h1>
+  <h1 class="hero-title glitch" data-text="Look Into My Realm">Look Into My Realm</h1>
   <p class="hero-tagline">Gaming / Tech / Adventures from the void</p>
 </div>
 
