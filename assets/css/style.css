@@ -505,3 +505,399 @@ html.dark .theme-toggle .moon-icon {
     color: black;
   }
 }
+
+/* ===== GAMING REALM STYLES ===== */
+
+/* Keyframe animations */
+@keyframes glitch {
+  0% {
+    text-shadow: 2px 0 var(--link-color), -2px 0 #ff00ff;
+  }
+  20% {
+    text-shadow: -2px 0 var(--link-color), 2px 0 #ff00ff;
+  }
+  40% {
+    text-shadow: 2px 0 var(--link-color), -2px 0 #ff00ff;
+  }
+  60% {
+    text-shadow: -2px 0 var(--link-color), 2px 0 #ff00ff;
+  }
+  80% {
+    text-shadow: 2px 0 var(--link-color), -2px 0 #ff00ff;
+  }
+  100% {
+    text-shadow: 0 0 var(--link-color), 0 0 #ff00ff;
+  }
+}
+
+@keyframes gridPulse {
+  0%, 100% { opacity: 0.1; }
+  50% { opacity: 0.3; }
+}
+
+@keyframes questSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes questGlow {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(96, 165, 250, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(96, 165, 250, 0.6);
+  }
+}
+
+@keyframes questGlowDark {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(62, 175, 74, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(62, 175, 74, 0.6);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes floatUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scan {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+/* Realm Hero Section */
+.realm-hero {
+  position: relative;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--bg-color) 0%, var(--code-bg) 100%);
+  border-bottom: 3px solid var(--link-color);
+  overflow: hidden;
+  margin-bottom: 3rem;
+  animation: floatUp 0.8s ease-out;
+}
+
+.realm-grid-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.grid-spot {
+  border: 2px solid var(--link-color);
+  border-radius: 50%;
+  animation: gridPulse 3s ease-in-out infinite;
+}
+
+.realm-hero-content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.realm-title-wrapper {
+  margin-bottom: 2rem;
+}
+
+.realm-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+  animation: glitch 3s ease-in-out infinite;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.realm-subtitle {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  letter-spacing: 3px;
+  font-weight: 300;
+  color: var(--link-color);
+}
+
+.realm-tagline {
+  font-size: 1.25rem;
+  font-style: italic;
+  opacity: 0.8;
+  margin-top: 1rem;
+}
+
+/* Stats display */
+.realm-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 2px dashed var(--border-color);
+}
+
+.stat-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--code-bg);
+  border: 2px solid var(--link-color);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(96, 165, 250, 0.3);
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: 0.7;
+  margin-bottom: 0.5rem;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--link-color);
+}
+
+.stat-value.pulse {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Quest Log Section */
+.quest-log {
+  max-width: 900px;
+  margin: 0 auto 3rem;
+  padding: 2rem 1rem;
+}
+
+.quest-log-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.quest-log-header h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.header-accent {
+  height: 3px;
+  width: 100px;
+  background: linear-gradient(90deg, transparent, var(--link-color), transparent);
+  margin: 0 auto;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* Quests List */
+.quests-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.quest-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  background-color: var(--code-bg);
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  animation: questSlideIn 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+.quest-item:hover {
+  border-color: var(--link-color);
+  transform: translateX(5px);
+  animation: questGlow 2s ease-in-out infinite;
+}
+
+html.dark .quest-item:hover {
+  animation: questGlowDark 2s ease-in-out infinite;
+}
+
+.quest-marker {
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1;
+  animation: floatUp 0.8s ease-out;
+}
+
+.quest-item:hover .quest-marker {
+  transform: scale(1.2) rotate(5deg);
+  transition: transform 0.3s ease;
+}
+
+.quest-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.quest-title {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.quest-link {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.quest-link:hover {
+  text-decoration: underline;
+  letter-spacing: 0.5px;
+}
+
+.quest-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.quest-date, .quest-author {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.quest-description {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0.5rem 0;
+  opacity: 0.9;
+}
+
+.quest-action {
+  align-self: flex-start;
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--link-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+.quest-action:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(96, 165, 250, 0.4);
+}
+
+.quest-action:active {
+  transform: scale(0.95);
+}
+
+/* No quests state */
+.no-quests {
+  text-align: center;
+  padding: 3rem 1rem;
+  opacity: 0.6;
+  font-size: 1.25rem;
+}
+
+/* Realm footer */
+.realm-footer-banner {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(90deg, transparent, var(--link-color), transparent);
+  opacity: 0.5;
+  margin-top: 3rem;
+  border-top: 2px dashed var(--border-color);
+  border-bottom: 2px dashed var(--border-color);
+}
+
+.realm-message {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .realm-title {
+    font-size: 2rem;
+  }
+
+  .realm-subtitle {
+    font-size: 0.8rem;
+  }
+
+  .realm-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .quest-item {
+    grid-template-columns: 40px 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .quest-marker {
+    font-size: 1.5rem;
+  }
+
+  .quest-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
