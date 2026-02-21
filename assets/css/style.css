@@ -901,3 +901,440 @@ html.dark .quest-item:hover {
     gap: 0.5rem;
   }
 }
+
+/* ===== GAMING PAGE STYLES ===== */
+
+.gaming-hero {
+  position: relative;
+  background: linear-gradient(135deg, #000000 0%, #1a3a2a 100%);
+  border: 3px solid #3EAF4A;
+  border-top: none;
+  padding: 3rem 1rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.gaming-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    repeating-linear-gradient(0deg, rgba(62, 175, 74, 0.03) 0px, rgba(62, 175, 74, 0.03) 1px, transparent 1px, transparent 2px);
+  pointer-events: none;
+  animation: scanline-shift 8s linear infinite;
+}
+
+@keyframes scanline-shift {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(10px); }
+}
+
+.scanline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.15) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+.gaming-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.gaming-title {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+  letter-spacing: 3px;
+  color: #3EAF4A;
+  text-shadow: 2px 2px 0px #00FF00, 4px 4px 0px rgba(62, 175, 74, 0.3);
+  animation: pixel-bounce 0.6s ease;
+}
+
+@keyframes pixel-bounce {
+  0% { transform: translateY(-20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+.gaming-subtitle {
+  font-size: 1.2rem;
+  color: #60a5fa;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+.gaming-stat-panels {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.stat-panel {
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+  border: 2px solid #3EAF4A;
+  padding: 1.5rem 1rem;
+  box-shadow: inset 0 0 10px rgba(62, 175, 74, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.stat-panel::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 2px,
+    rgba(62, 175, 74, 0.03) 2px,
+    rgba(62, 175, 74, 0.03) 4px
+  );
+}
+
+.stat-panel:hover {
+  border-color: #60a5fa;
+  box-shadow: 0 0 20px rgba(62, 175, 74, 0.4), inset 0 0 10px rgba(62, 175, 74, 0.1);
+  transform: translateY(-3px);
+}
+
+.panel-header {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #60a5fa;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  border-bottom: 1px dashed #3EAF4A;
+  padding-bottom: 0.5rem;
+}
+
+.panel-content {
+  font-size: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.stream-link {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #3EAF4A 0%, #00FF00 100%);
+  color: #000000;
+  text-decoration: none;
+  font-weight: 700;
+  border: 2px solid #3EAF4A;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+.stream-link:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+.discord-tag {
+  font-weight: 700;
+  color: #3EAF4A;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.discord-desc {
+  font-size: 0.85rem;
+  opacity: 0.8;
+  margin: 0.3rem 0;
+}
+
+.platform-list {
+  line-height: 1.8;
+  color: #3EAF4A;
+  font-weight: 600;
+}
+
+/* Steam Stats Section */
+.steam-stats {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  padding: 2rem 1rem;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+}
+
+.header-line {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #3EAF4A, #60a5fa, #3EAF4A, transparent);
+  width: 200px;
+  margin: 0 auto;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.steam-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.steam-card {
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+  border: 2px solid #3EAF4A;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.steam-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(62, 175, 74, 0.1);
+  transition: left 0.5s ease;
+}
+
+.steam-card:hover {
+  border-color: #60a5fa;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(62, 175, 74, 0.3);
+}
+
+.steam-card:hover::after {
+  left: 100%;
+}
+
+.card-label {
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #60a5fa;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.card-value {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #3EAF4A;
+  margin: 0.5rem 0;
+  text-shadow: 2px 2px 0px rgba(62, 175, 74, 0.2);
+}
+
+.card-badge {
+  font-size: 0.8rem;
+  color: #ffffff;
+  background-color: #3EAF4A;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.pulse-badge {
+  animation: pulse-badge 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse-badge {
+  0%, 100% { 
+    background-color: #3EAF4A;
+    box-shadow: 0 0 0px rgba(62, 175, 74, 0);
+  }
+  50% { 
+    background-color: #00FF00;
+    box-shadow: 0 0 10px rgba(62, 175, 74, 0.5);
+  }
+}
+
+.steam-link-text {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.cta-link {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #3EAF4A 0%, #60a5fa 100%);
+  color: #000000;
+  text-decoration: none;
+  font-weight: 700;
+  border: 2px solid #3EAF4A;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5);
+}
+
+.cta-link:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* Gaming Showcase */
+.gaming-showcase {
+  max-width: 1000px;
+  margin: 0 auto 3rem;
+  padding: 2rem 1rem;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.game-card {
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a2a1a 100%);
+  border: 2px solid #3EAF4A;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.game-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(62, 175, 74, 0.1) 0%, transparent 70%);
+  transition: top 0.5s ease, right 0.5s ease;
+}
+
+.game-card:hover {
+  border-color: #60a5fa;
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 10px 30px rgba(62, 175, 74, 0.3), inset 0 0 20px rgba(62, 175, 74, 0.1);
+}
+
+.game-card:hover::before {
+  top: -10%;
+  right: -10%;
+}
+
+.game-emoji {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+.game-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #3EAF4A;
+  letter-spacing: 1px;
+}
+
+.game-rating {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  letter-spacing: 2px;
+}
+
+.game-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #3EAF4A;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 700;
+  border: 2px solid #3EAF4A;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+.game-link:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.5);
+  background-color: #00FF00;
+}
+
+.coming-soon {
+  color: #60a5fa;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  opacity: 0.7;
+}
+
+.gaming-footer {
+  text-align: center;
+  padding: 3rem 1rem;
+  border-top: 2px dashed #3EAF4A;
+  border-bottom: 2px dashed #3EAF4A;
+  margin-top: 3rem;
+}
+
+.pixel-text {
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #3EAF4A;
+  margin-bottom: 1rem;
+  animation: float 2s ease-in-out infinite;
+}
+
+.discord-invite {
+  font-size: 1rem;
+  color: #60a5fa;
+  opacity: 0.9;
+}
+
+/* Responsive gaming styles */
+@media (max-width: 768px) {
+  .gaming-title {
+    font-size: 2rem;
+    text-shadow: 1px 1px 0px #00FF00, 2px 2px 0px rgba(62, 175, 74, 0.3);
+  }
+
+  .gaming-stat-panels {
+    grid-template-columns: 1fr;
+  }
+
+  .game-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-panel {
+    padding: 1rem;
+  }
+}

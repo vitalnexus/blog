@@ -1,0 +1,48 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.6; }
+      }
+      .pulse { animation: pulse 1s infinite; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="100" height="100" fill="#000000"/>
+  
+  <!-- Grid pattern for 80s aesthetic -->
+  <defs>
+    <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+      <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#3EAF4A" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="100" height="100" fill="url(#grid)"/>
+  
+  <!-- Joystick base -->
+  <rect x="25" y="35" width="50" height="50" fill="#1a1a1a" stroke="#3EAF4A" stroke-width="2"/>
+  
+  <!-- D-pad left -->
+  <g stroke="#3EAF4A" stroke-width="2" fill="#2a2a2a">
+    <rect x="28" y="48" width="8" height="4"/>
+    <rect x="26" y="50" width="4" height="8"/>
+  </g>
+  
+  <!-- Action buttons right -->
+  <g fill="#3EAF4A" class="pulse" opacity="0.9">
+    <circle cx="68" cy="43" r="3"/>
+    <circle cx="73" cy="50" r="3"/>
+    <circle cx="68" cy="57" r="3"/>
+  </g>
+  
+  <!-- Center button -->
+  <circle cx="50" cy="50" r="2" fill="#3EAF4A"/>
+  
+  <!-- Shoulder buttons -->
+  <rect x="28" y="38" width="8" height="2" fill="#3EAF4A" rx="1"/>
+  <rect x="64" y="38" width="8" height="2" fill="#3EAF4A" rx="1"/>
+  
+  <!-- Glow effect -->
+  <circle cx="50" cy="50" r="35" fill="none" stroke="#3EAF4A" stroke-width="1" opacity="0.2"/>
+</svg>
