@@ -1,53 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-  <meta name="description" content="{{ site.description }}">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | truncatewords: 50 }}">
+  <link rel="icon" href="https://yt3.googleusercontent.com/EWIbmC28dR4JnEUXg8rBjPKEFEXUrfkVy0_BDXcr_dlSzAbHnkfu5h0Vid3brKEWYYcYn-DV7Q=s160-c-k-c0x00ffffff-no-rj" type="image/png">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon.svg' | relative_url }}">
+  {% feed_meta %}
+  {% seo %}
 </head>
 <body>
-  <div class="myspace-bg-container">
-    <video autoplay muted loop class="myspace-bg-video" poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
-      <source src="https://shared.fastly.steamstatic.com/community_assets/images/items/1263950/4d466f77edf3265a253fba79d47bc91a37e34920.webm" type="video/webm">
-    </video>
-    <div class="myspace-bg-overlay"></div>
+
+  <!-- Black Hole Background -->
+  <div class="black-hole-container">
+    <div class="star-field" id="starField"></div>
+    <div class="black-hole">
+      <div class="accretion-disk">
+        <div class="accretion-ring"></div>
+        <div class="accretion-ring"></div>
+        <div class="accretion-ring"></div>
+        <div class="accretion-ring"></div>
+        <div class="accretion-ring"></div>
+      </div>
+      <div class="lensing-glow"></div>
+      <div class="black-hole-core"></div>
+    </div>
   </div>
 
+  <!-- Scanlines -->
+  <div class="scanlines"></div>
+
+  <!-- Header -->
   <header class="site-header">
-    <nav class="site-nav">
-      <div class="nav-container">
-        <div class="logo">
-          <a href="{{ '/' | relative_url }}">
-            <img src="{{ '/assets/images/logo.svg' | relative_url }}" alt="{{ site.title }}" class="logo-img">
-          </a>
-        </div>
-        <ul class="nav-links">
-          <li><a href="{{ '/' | relative_url }}">Posts</a></li>
-          <li><a href="{{ '/gaming/' | relative_url }}">Gaming</a></li>
-          <li><a href="{{ '/about/' | relative_url }}">About</a></li>
-          <li class="theme-toggle-container">
-            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
-              <span class="sun-icon">☀️</span>
-              <span class="moon-icon">🌙</span>
-            </button>
-          </li>
-        </ul>
-      </div>
+    <a href="{{ '/' | relative_url }}" class="site-logo">
+      Look Into My Real
+      <span class="logo-sub">by GAM3RGAWD</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M3 12h18M3 6h18M3 18h18"/>
+      </svg>
+    </button>
+    <nav class="site-nav" id="siteNav">
+      <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a>
+      <a href="{{ '/posts' | relative_url }}" {% if page.url == '/posts/' %}class="active"{% endif %}>Posts</a>
+      <a href="{{ '/gaming' | relative_url }}" {% if page.url == '/gaming/' %}class="active"{% endif %}>Gaming Hub</a>
+      <a href="{{ '/games' | relative_url }}" {% if page.url == '/games/' %}class="active"{% endif %}>AI Games</a>
+      <a href="{{ '/about' | relative_url }}" {% if page.url == '/about/' %}class="active"{% endif %}>About</a>
     </nav>
   </header>
 
-  <main class="site-main">
+  <!-- Content -->
+  <main class="site-content">
     {{ content }}
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
-    <p>&copy; 2026 {{ site.title }}. Powered by <a href="https://jekyllrb.com/">Jekyll</a> on <a href="https://pages.github.com/">GitHub Pages</a>.</p>
+    <div class="footer-links">
+      <a href="https://steamcommunity.com/id/GAM3RGAWD" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3l-.5 3H13v6.95c5.05-.5 9-4.76 9-9.95 0-5.52-4.48-10-10-10z"/></svg>
+        Steam
+      </a>
+      <a href="https://www.youtube.com/@gam3rgawd" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.54 3.5 12 3.5 12 3.5s-7.54 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.7 31.7 0 0 0 0 12a31.7 31.7 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14c1.84.55 9.38.55 9.38.55s7.54 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.7 31.7 0 0 0 24 12a31.7 31.7 0 0 0-.5-5.81zM9.54 15.57V8.43L15.82 12l-6.28 3.57z"/></svg>
+        YouTube
+      </a>
+      <a href="https://discord.gg" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M20.32 4.37a19.8 19.8 0 0 0-4.93-1.51.07.07 0 0 0-.08.04c-.21.38-.45.87-.61 1.25a18.27 18.27 0 0 0-5.4 0 12.6 12.6 0 0 0-.62-1.25.07.07 0 0 0-.08-.04 19.74 19.74 0 0 0-4.93 1.51.07.07 0 0 0-.03.03C1.07 8.52.32 12.54.68 16.51a.08.08 0 0 0 .03.05 19.9 19.9 0 0 0 5.99 3.03.08.08 0 0 0 .08-.03c.46-.63.87-1.3 1.22-2a.08.08 0 0 0-.04-.1 13.1 13.1 0 0 1-1.87-.9.08.08 0 0 1 0-.12c.13-.09.25-.19.37-.28a.07.07 0 0 1 .08-.01c3.93 1.79 8.18 1.79 12.07 0a.07.07 0 0 1 .08.01c.12.1.24.19.37.28a.08.08 0 0 1 0 .12c-.6.35-1.22.65-1.87.9a.08.08 0 0 0-.04.1c.36.7.77 1.37 1.22 2a.07.07 0 0 0 .08.03 19.83 19.83 0 0 0 6-3.03.08.08 0 0 0 .03-.05c.42-4.36-.71-8.35-2.99-11.78a.06.06 0 0 0-.03-.03zM8.02 14.09c-1.02 0-1.86-.94-1.86-2.09s.82-2.09 1.86-2.09c1.05 0 1.88.94 1.86 2.09 0 1.15-.82 2.09-1.86 2.09zm6.97 0c-1.02 0-1.86-.94-1.86-2.09s.82-2.09 1.86-2.09c1.05 0 1.88.94 1.86 2.09 0 1.15-.81 2.09-1.86 2.09z"/></svg>
+        Discord
+      </a>
+    </div>
+    <p>GAM3RGAWD &middot; Look Into My Real &middot; Built from the void</p>
   </footer>
 
-  <script src="{{ '/assets/js/theme-toggle.js' | relative_url }}"></script>
+  <!-- Matrix Easter Egg Canvas -->
+  <canvas class="matrix-canvas" id="matrixCanvas"></canvas>
+
+  <script src="{{ '/assets/js/site.js' | relative_url }}"></script>
 </body>
 </html>

@@ -1,36 +1,20 @@
-title: GAM3RGAWD
-description: My Realm - Gaming, Tech, and Digital Adventures
+title: Look Into My Real
+description: Gaming, Tech, and Adventures from the void - by GAM3RGAWD
 author: GAM3RGAWD
 url: https://vitalnexus.github.io
 baseurl: /blog
 
 # Jekyll settings
-theme: minima
 markdown: kramdown
 kramdown:
   input: GFM
   hard_wrap: false
   syntax_highlighter: rouge
 
-# Collections
-collections:
-  posts:
-    output: true
-    permalink: /:categories/:title/
-
 # Plugins
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-archives
-
-# Category archive settings
-jekyll-archives:
-  enabled: [categories]
-  layouts:
-    category: category
-  permalinks:
-    category: /categories/:name/
 
 # Asset settings
 sass:
@@ -42,27 +26,14 @@ encoding: utf-8
 exclude:
   - .gitignore
   - README*.md
-  - GETTING_STARTED.md
   - Gemfile
   - Gemfile.lock
   - node_modules
   - .DS_Store
-  - docker-compose.yml
-  - Dockerfile
-  - jest.config.js
-  - jest.setup.js
-  - next.config.js
-  - postcss.config.js
-  - tailwind.config.js
-  - tsconfig.json
-  - vercel.json
-  - __tests__
-  - prisma
-  - src
-  - .env.example
+  - Guides
 
 # Permalink settings
-permalink: /:year/:month/:day/:title/
+permalink: /:categories/:title/
 
 # Post defaults
 defaults:
@@ -71,5 +42,13 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      author: "Admin"
+      author: "GAM3RGAWD"
       tags: []
+
+# Categories
+category_list:
+  - reviews
+  - thoughts
+  - technology
+  - gaming
+  - space-travel

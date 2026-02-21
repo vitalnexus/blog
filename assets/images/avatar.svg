@@ -1,79 +1,27 @@
 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <style>
-      @keyframes float {
-        0%, 100% { transform: translateY(0px); }
-        50% { transform: translateY(-5px); }
-      }
-      .floating { animation: float 3s ease-in-out infinite; }
-    </style>
-    <linearGradient id="crtGlow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#3EAF4A;stop-opacity:0.3" />
-      <stop offset="100%" style="stop-color:#00FF00;stop-opacity:0.1" />
-    </linearGradient>
-  </defs>
-  
-  <!-- Background circle -->
-  <circle cx="100" cy="100" r="95" fill="#000000" stroke="#3EAF4A" stroke-width="3"/>
-  
-  <!-- Grid pattern overlay -->
-  <defs>
-    <pattern id="avatar-grid" width="8" height="8" patternUnits="userSpaceOnUse">
-      <path d="M 8 0 L 0 0 0 8" fill="none" stroke="#3EAF4A" stroke-width="0.3" opacity="0.2"/>
-    </pattern>
-  </defs>
-  <circle cx="100" cy="100" r="95" fill="url(#avatar-grid)"/>
-  
-  <!-- Anonymous silhouette - gamer with headset -->
-  <g class="floating">
-    <!-- Head silhouette -->
-    <circle cx="100" cy="65" r="25" fill="#3EAF4A"/>
-    
-    <!-- Gaming headset left -->
-    <rect x="70" y="50" width="8" height="12" fill="#3EAF4A" rx="4"/>
-    <circle cx="75" cy="50" r="4" fill="#3EAF4A"/>
-    <path d="M 70 52 Q 60 55 60 68" stroke="#3EAF4A" stroke-width="3" fill="none" stroke-linecap="round"/>
-    
-    <!-- Gaming headset right -->
-    <rect x="122" y="50" width="8" height="12" fill="#3EAF4A" rx="4"/>
-    <circle cx="126" cy="50" r="4" fill="#3EAF4A"/>
-    <path d="M 130 52 Q 140 55 140 68" stroke="#3EAF4A" stroke-width="3" fill="none" stroke-linecap="round"/>
-    
-    <!-- Headset band -->
-    <path d="M 75 50 Q 100 35 126 50" stroke="#3EAF4A" stroke-width="3" fill="none" stroke-linecap="round"/>
-    
-    <!-- Microphone boom -->
-    <path d="M 75 56 L 50 80" stroke="#3EAF4A" stroke-width="2" fill="none" stroke-linecap="round"/>
-    <circle cx="48" cy="82" r="3" fill="#3EAF4A"/>
-    
-    <!-- Body/Shoulders -->
-    <ellipse cx="100" cy="105" rx="28" ry="20" fill="#3EAF4A"/>
-    
-    <!-- Gaming controller icon on chest -->
-    <g transform="translate(100, 105)" opacity="0.4">
-      <rect x="-12" y="-4" width="24" height="8" fill="none" stroke="#000000" stroke-width="1" rx="2"/>
-      <circle cx="-6" cy="-2" r="2" fill="#000000"/>
-      <circle cx="6" cy="-2" r="1.5" fill="#000000"/>
-      <circle cx="6" cy="2" r="1.5" fill="#000000"/>
-    </g>
-  </g>
-  
+  <rect width="200" height="200" rx="100" fill="#0a0f0a"/>
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#0d1a0d" stroke-width="2"/>
+  <circle cx="100" cy="100" r="88" fill="none" stroke="#00FF41" stroke-width="0.5" opacity="0.3"/>
+  <!-- Headset silhouette -->
+  <path d="M70 110 Q70 70 100 60 Q130 70 130 110" fill="none" stroke="#00FF41" stroke-width="3" stroke-linecap="round"/>
+  <!-- Headset band -->
+  <path d="M65 110 L65 120 Q65 130 75 130 L80 130" fill="none" stroke="#00FF41" stroke-width="2.5"/>
+  <path d="M135 110 L135 120 Q135 130 125 130 L120 130" fill="none" stroke="#00FF41" stroke-width="2.5"/>
+  <!-- Microphone -->
+  <path d="M120 130 Q130 140 115 145" fill="none" stroke="#00FF41" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="113" cy="146" r="3" fill="#00FF41"/>
+  <!-- Eyes (screen glow) -->
+  <rect x="83" y="90" width="10" height="6" rx="1" fill="#00FF41" opacity="0.8"/>
+  <rect x="107" y="90" width="10" height="6" rx="1" fill="#00FF41" opacity="0.8"/>
   <!-- Glow effect -->
-  <circle cx="100" cy="100" r="95" fill="none" stroke="url(#crtGlow)" stroke-width="2"/>
-  
-  <!-- Scanlines effect -->
-  <defs>
-    <pattern id="scanlines" width="100" height="2" patternUnits="userSpaceOnUse">
-      <line x1="0" y1="0" x2="200" y2="0" stroke="#3EAF4A" stroke-width="1" opacity="0.05"/>
-    </pattern>
-  </defs>
-  <circle cx="100" cy="100" r="95" fill="url(#scanlines)"/>
-  
-  <!-- Retro pixel corner accents -->
-  <g fill="#3EAF4A" opacity="0.6">
-    <rect x="15" y="15" width="8" height="8"/>
-    <rect x="177" y="15" width="8" height="8"/>
-    <rect x="15" y="177" width="8" height="8"/>
-    <rect x="177" y="177" width="8" height="8"/>
-  </g>
+  <circle cx="88" cy="93" r="12" fill="#00FF41" opacity="0.05"/>
+  <circle cx="112" cy="93" r="12" fill="#00FF41" opacity="0.05"/>
+  <!-- Stars -->
+  <circle cx="30" cy="30" r="1.5" fill="#fff" opacity="0.5"/>
+  <circle cx="170" cy="25" r="1" fill="#00e5ff" opacity="0.4"/>
+  <circle cx="25" cy="165" r="1" fill="#00FF41" opacity="0.3"/>
+  <circle cx="175" cy="170" r="1.5" fill="#fff" opacity="0.4"/>
+  <circle cx="155" cy="50" r="0.8" fill="#00FF41" opacity="0.5"/>
+  <circle cx="45" cy="150" r="0.8" fill="#00e5ff" opacity="0.3"/>
 </svg>
