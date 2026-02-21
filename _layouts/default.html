@@ -10,11 +10,20 @@
   <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon.svg' | relative_url }}">
 </head>
 <body>
+  <div class="myspace-bg-container">
+    <video autoplay muted loop class="myspace-bg-video" poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+      <source src="https://shared.fastly.steamstatic.com/community_assets/images/items/1263950/4d466f77edf3265a253fba79d47bc91a37e34920.webm" type="video/webm">
+    </video>
+    <div class="myspace-bg-overlay"></div>
+  </div>
+
   <header class="site-header">
     <nav class="site-nav">
       <div class="nav-container">
         <div class="logo">
-          <a href="{{ '/' | relative_url }}"><h1>{{ site.title }}</h1></a>
+          <a href="{{ '/' | relative_url }}">
+            <img src="{{ '/assets/images/logo.svg' | relative_url }}" alt="{{ site.title }}" class="logo-img">
+          </a>
         </div>
         <ul class="nav-links">
           <li><a href="{{ '/' | relative_url }}">Posts</a></li>
