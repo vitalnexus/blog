@@ -26,7 +26,7 @@ permalink: /parallax/
             <h3 class="post-item-title">
               <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
             </h3>
-            <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
+            <p class="post-excerpt">{{ post.excerpt | default: "" | strip_html | truncatewords: 50 }}</p>
             <div class="post-categories">
               {% for cat in post.categories %}
                 <span class="category-tag">{{ cat }}</span>
