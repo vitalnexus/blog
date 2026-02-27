@@ -214,6 +214,18 @@
     }
   }
 
+  // --- Parallax Page Detection ---
+  function initParallaxPage() {
+    var parallaxPage = document.querySelector('.parallax-page');
+    if (parallaxPage) {
+      // Hide default backgrounds when on parallax page
+      var blackHole = document.querySelector('.black-hole-container');
+      var sun = document.querySelector('.sun-container');
+      if (blackHole) blackHole.style.display = 'none';
+      if (sun) sun.style.display = 'none';
+    }
+  }
+
   // --- Init ---
   function init() {
     createStarField();
@@ -221,6 +233,7 @@
     initThemeToggle();
     initMatrixEasterEgg();
     initGlitchText();
+    initParallaxPage();
   }
 
   if (document.readyState === 'loading') {

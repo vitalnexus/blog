@@ -28,7 +28,7 @@
 </head>
 <body>
 
-  <!-- Black Hole Background -->
+  <!-- Black Hole Background (Dark Mode) -->
   <div class="black-hole-container">
     <div class="star-field" id="starField"></div>
     <div class="black-hole">
@@ -41,6 +41,55 @@
       </div>
       <div class="lensing-glow"></div>
       <div class="black-hole-core"></div>
+    </div>
+  </div>
+
+  <!-- Sun Background (Light Mode) - NASA-inspired realistic sun -->
+  <div class="sun-container">
+    <div class="sun">
+      <!-- Outer corona streamers -->
+      <div class="corona-streamers">
+        <div class="streamer streamer-1"></div>
+        <div class="streamer streamer-2"></div>
+        <div class="streamer streamer-3"></div>
+        <div class="streamer streamer-4"></div>
+        <div class="streamer streamer-5"></div>
+        <div class="streamer streamer-6"></div>
+        <div class="streamer streamer-7"></div>
+        <div class="streamer streamer-8"></div>
+      </div>
+      <!-- Inner corona glow -->
+      <div class="sun-corona-inner"></div>
+      <div class="sun-corona-outer"></div>
+      <!-- Chromosphere (thin reddish layer) -->
+      <div class="sun-chromosphere"></div>
+      <!-- Photosphere (visible surface with granulation) -->
+      <div class="sun-photosphere">
+        <div class="granulation-layer"></div>
+        <div class="granulation-layer granulation-layer-2"></div>
+      </div>
+      <!-- Limb darkening overlay -->
+      <div class="sun-limb-darkening"></div>
+      <!-- Surface activity -->
+      <div class="surface-turbulence"></div>
+      <!-- Sunspots -->
+      <div class="sunspot sunspot-1"></div>
+      <div class="sunspot sunspot-2"></div>
+      <!-- Prominences (plasma arcs) -->
+      <div class="prominence prominence-1">
+        <div class="prominence-arc"></div>
+      </div>
+      <div class="prominence prominence-2">
+        <div class="prominence-arc"></div>
+      </div>
+      <div class="prominence prominence-3">
+        <div class="prominence-arc"></div>
+      </div>
+      <!-- Spicules (small jets at the edge) -->
+      <div class="spicules-ring"></div>
+      <!-- Solar flare eruptions -->
+      <div class="solar-eruption eruption-1"></div>
+      <div class="solar-eruption eruption-2"></div>
     </div>
   </div>
 
@@ -59,6 +108,7 @@
       <a href="{{ '/posts' | relative_url }}" {% if page.url == '/posts/' %}class="active"{% endif %}>Posts</a>
       <a href="{{ '/gaming' | relative_url }}" {% if page.url == '/gaming/' %}class="active"{% endif %}>Gaming Hub</a>
       <a href="{{ '/live-review' | relative_url }}" {% if page.url == '/live-review/' %}class="active"{% endif %}>Live Reviews</a>
+      <a href="{{ '/parallax' | relative_url }}" {% if page.url == '/parallax/' %}class="active"{% endif %}>Parallax</a>
       <a href="{{ '/games' | relative_url }}" {% if page.url == '/games/' %}class="active"{% endif %}>AI Games</a>
       <a href="{{ '/about' | relative_url }}" {% if page.url == '/about/' %}class="active"{% endif %}>About</a>
       </nav>
