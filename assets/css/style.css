@@ -27,60 +27,56 @@
 
 :root[data-theme='light'] {
   --void: transparent;
-  --deep: rgba(0, 0, 0, 0.1);
-  --panel: rgba(0, 0, 0, 0.25);
-  --border: rgba(0, 0, 0, 0.3);
-  --green: #00FF41;
-  --green-dim: #00cc33;
-  --green-glow: rgba(0, 255, 65, 0.4);
-  --green-subtle: rgba(0, 255, 65, 0.15);
+  --deep: rgba(128, 128, 128, 0.2);
+  --panel: rgba(128, 128, 128, 0.5);
+  --border: rgba(100, 100, 100, 0.4);
+  --green: #222222;
+  --green-dim: #444444;
+  --green-glow: rgba(0, 0, 0, 0.2);
+  --green-subtle: rgba(0, 0, 0, 0.1);
   --cyan: #00e5ff;
   --magenta: #ff00ff;
-  --text: #b0ffb0;
-  --text-dim: #7adf7a;
-  --header-bg: rgba(0, 0, 0, 0.15);
-  --mobile-nav-bg: rgba(0, 0, 0, 0.85);
+  --text: #111111;
+  --text-dim: #333333;
+  --header-bg: rgba(180, 180, 180, 0.7);
+  --mobile-nav-bg: rgba(200, 200, 200, 0.95);
 }
 
 /* ============================================
-   Light Mode - Dark Glass Appearance (Inverted)
-   Semi-transparent dark elements over sun background
+   Light Mode - Gray Clean Appearance
+   Gray elements over sun background, black text
    ============================================ */
 
 [data-theme='light'] body {
   background: transparent;
-  color: #b0ffb0;
+  color: #111111;
 }
 
-/* All text in light mode - bright green */
+/* All text in light mode - black */
 [data-theme='light'] p,
 [data-theme='light'] li,
 [data-theme='light'] span,
 [data-theme='light'] .post-excerpt,
 [data-theme='light'] .post-body,
 [data-theme='light'] .card p {
-  color: #b0ffb0;
+  color: #111111;
 }
 
 /* Site logo visibility */
 [data-theme='light'] .site-logo {
-  color: #00FF41;
-  text-shadow: 
-    0 0 10px rgba(0, 255, 65, 0.6),
-    0 0 20px rgba(0, 255, 65, 0.4);
-  background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  color: #111111;
+  text-shadow: none;
+  background: rgba(180, 180, 180, 0.8);
   padding: 0.5rem 1rem;
   border-radius: 6px;
-  border: 1px solid rgba(0, 255, 65, 0.3);
+  border: 1px solid rgba(100, 100, 100, 0.3);
 }
 
 [data-theme='light'] .site-logo .logo-sub {
-  color: #7adf7a;
+  color: #333333;
 }
 
-/* Glassmorphism base mixin-style properties */
+/* Gray solid backgrounds for cards and elements */
 [data-theme='light'] .card,
 [data-theme='light'] .profile-banner,
 [data-theme='light'] .game-card,
@@ -90,103 +86,80 @@
 [data-theme='light'] .game-embed,
 [data-theme='light'] .category-btn,
 [data-theme='light'] .section-header {
-  background: rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(0, 255, 65, 0.2);
-  box-shadow: 
-    0 4px 30px rgba(0, 0, 0, 0.3),
-    inset 0 0 0 1px rgba(0, 255, 65, 0.05);
+  background: rgba(180, 180, 180, 0.85);
+  border: 1px solid rgba(100, 100, 100, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 [data-theme='light'] .card:hover,
 [data-theme='light'] .game-card:hover,
 [data-theme='light'] .post-item:hover {
-  background: rgba(0, 0, 0, 0.45);
-  border-color: rgba(0, 255, 65, 0.4);
-  box-shadow: 
-    0 8px 32px rgba(0, 0, 0, 0.4),
-    0 0 20px rgba(0, 255, 65, 0.15),
-    inset 0 0 0 1px rgba(0, 255, 65, 0.1);
+  background: rgba(200, 200, 200, 0.9);
+  border-color: rgba(80, 80, 80, 0.4);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
-/* Site Header - glass effect */
+/* Site Header - gray solid */
 [data-theme='light'] .site-header {
-  background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(0, 255, 65, 0.2);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  background: rgba(180, 180, 180, 0.9);
+  border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Site Footer - glass effect */
+/* Site Footer - gray solid */
 [data-theme='light'] .site-footer {
-  background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-top: 1px solid rgba(0, 255, 65, 0.2);
+  background: rgba(180, 180, 180, 0.9);
+  border-top: 1px solid rgba(100, 100, 100, 0.3);
 }
 
 /* Navigation links */
 [data-theme='light'] .site-nav a {
-  color: #b0ffb0;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(0, 255, 65, 0.2);
+  color: #111111;
+  background: rgba(200, 200, 200, 0.8);
+  border: 1px solid rgba(100, 100, 100, 0.3);
   font-weight: 600;
-  text-shadow: 0 0 8px rgba(0, 255, 65, 0.3);
+  text-shadow: none;
 }
 
 [data-theme='light'] .site-nav a:hover,
 [data-theme='light'] .site-nav a.active {
-  background: rgba(0, 0, 0, 0.7);
-  border-color: rgba(0, 255, 65, 0.5);
-  color: #00FF41;
-  text-shadow: 0 0 12px rgba(0, 255, 65, 0.5);
+  background: rgba(220, 220, 220, 0.95);
+  border-color: rgba(80, 80, 80, 0.5);
+  color: #000000;
 }
 
 /* Mobile nav dropdown */
 [data-theme='light'] .site-nav.open {
-  background: rgba(0, 0, 0, 0.9);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background: rgba(200, 200, 200, 0.98);
 }
 
 /* Theme toggle button */
 [data-theme='light'] .theme-toggle {
-  background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(0, 255, 65, 0.3);
+  background: rgba(200, 200, 200, 0.8);
+  border: 1px solid rgba(100, 100, 100, 0.3);
 }
 
 [data-theme='light'] .theme-toggle:hover {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(220, 220, 220, 0.95);
 }
 
 /* Nav toggle (hamburger) */
 [data-theme='light'] .nav-toggle {
-  border-color: rgba(0, 255, 65, 0.3);
-  background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  border-color: rgba(100, 100, 100, 0.3);
+  background: rgba(200, 200, 200, 0.8);
 }
 
 /* Category filter buttons */
 [data-theme='light'] .category-btn {
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  color: #b0ffb0;
+  background: rgba(200, 200, 200, 0.85);
+  color: #111111;
   font-weight: 600;
-  text-shadow: 0 0 8px rgba(0, 255, 65, 0.3);
 }
 
 [data-theme='light'] .category-btn:hover,
 [data-theme='light'] .category-btn.active {
-  background: rgba(0, 0, 0, 0.7);
-  color: #00FF41;
+  background: rgba(220, 220, 220, 0.95);
+  color: #000000;
 }
 
 /* Post content area */
@@ -202,24 +175,19 @@
 
 /* Hero section */
 [data-theme='light'] .hero {
-  background: rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background: rgba(180, 180, 180, 0.85);
   border-radius: 12px;
   margin: 0 1rem;
-  border: 1px solid rgba(0, 255, 65, 0.15);
+  border: 1px solid rgba(100, 100, 100, 0.3);
 }
 
 [data-theme='light'] .hero-title {
-  color: #00FF41;
-  text-shadow: 
-    0 0 20px rgba(0, 255, 65, 0.6),
-    0 0 40px rgba(0, 255, 65, 0.3);
+  color: #111111;
+  text-shadow: none;
 }
 
 [data-theme='light'] .hero-tagline {
-  color: #7adf7a;
-  text-shadow: 0 0 8px rgba(0, 255, 65, 0.3);
+  color: #333333;
 }
 
 /* Glitch effect adjustment for light mode */
@@ -233,44 +201,39 @@
 
 /* Section headers */
 [data-theme='light'] .section-header {
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: rgba(180, 180, 180, 0.85);
   border-radius: 8px;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
 [data-theme='light'] .section-title {
-  text-shadow: 0 0 12px rgba(0, 255, 65, 0.4);
+  color: #111111;
+  text-shadow: none;
 }
 
 [data-theme='light'] .section-divider {
-  background: linear-gradient(90deg, transparent, rgba(0, 255, 65, 0.5), transparent);
+  background: linear-gradient(90deg, transparent, rgba(100, 100, 100, 0.5), transparent);
 }
 
 /* Stats panel rows */
 [data-theme='light'] .stat-row {
-  border-bottom-color: rgba(0, 255, 65, 0.1);
+  border-bottom-color: rgba(100, 100, 100, 0.2);
 }
 
 [data-theme='light'] .stat-label {
-  color: #7adf7a;
+  color: #333333;
 }
 
 /* Badges */
 [data-theme='light'] .badge-gold {
-  background: rgba(255, 215, 0, 0.2);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  color: #ffd700;
-  border-color: rgba(255, 215, 0, 0.4);
+  background: rgba(255, 200, 50, 0.4);
+  color: #6b4e00;
+  border-color: rgba(200, 150, 0, 0.5);
 }
 
 [data-theme='light'] .badge-green {
-  background: rgba(0, 255, 65, 0.15);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  background: rgba(76, 175, 80, 0.3);
 }
 
 /* Game canvas wrapper */
@@ -280,36 +243,34 @@
 }
 
 [data-theme='light'] .game-canvas-wrapper {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(50, 50, 50, 0.9);
   border-radius: 4px;
 }
 
 [data-theme='light'] .game-btn {
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  border: 1px solid rgba(0, 255, 65, 0.3);
-  color: #00FF41;
+  background: rgba(200, 200, 200, 0.85);
+  border: 1px solid rgba(100, 100, 100, 0.3);
+  color: #111111;
 }
 
 [data-theme='light'] .game-btn:hover {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(220, 220, 220, 0.95);
 }
 
 /* Profile avatar - keep dark background for contrast */
 [data-theme='light'] .profile-avatar {
   background: #1a1a1a;
-  box-shadow: 0 0 20px rgba(0, 255, 65, 0.4);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
 /* Profile info text */
 [data-theme='light'] .profile-info h2 {
-  color: #00FF41;
-  text-shadow: 0 0 12px rgba(0, 255, 65, 0.5);
+  color: #111111;
+  text-shadow: none;
 }
 
 [data-theme='light'] .profile-status {
-  color: #7adf7a;
+  color: #333333;
 }
 
 /* All headings in light mode */
@@ -317,8 +278,8 @@
 [data-theme='light'] h2,
 [data-theme='light'] h3,
 [data-theme='light'] h4 {
-  color: #00FF41;
-  text-shadow: 0 0 12px rgba(0, 255, 65, 0.4);
+  color: #111111;
+  text-shadow: none;
 }
 
 [data-theme='light'] .card-title,
@@ -326,77 +287,67 @@
 [data-theme='light'] .game-card-title,
 [data-theme='light'] .post-item-title a,
 [data-theme='light'] .post-title {
-  color: #00FF41;
-  text-shadow: 0 0 12px rgba(0, 255, 65, 0.5);
+  color: #111111;
+  text-shadow: none;
 }
 
 /* Post categories/tags */
 [data-theme='light'] .category-tag {
-  background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  color: #00FF41;
+  background: rgba(200, 200, 200, 0.85);
+  color: #111111;
   font-weight: 600;
-  border: 1px solid rgba(0, 255, 65, 0.3);
+  border: 1px solid rgba(100, 100, 100, 0.3);
 }
 
 /* Post date */
 [data-theme='light'] .post-date {
-  color: #7adf7a;
-  text-shadow: 0 0 8px rgba(0, 255, 65, 0.3);
+  color: #333333;
 }
 
 /* Links in light mode */
 [data-theme='light'] a {
-  color: #00FF41;
+  color: #222222;
 }
 
 [data-theme='light'] a:hover {
-  color: #b0ffb0;
-  text-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
+  color: #000000;
 }
 
 /* Footer links */
 [data-theme='light'] .footer-links a {
-  color: #00FF41;
-  background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  color: #111111;
+  background: rgba(200, 200, 200, 0.85);
   border-radius: 4px;
   padding: 0.4rem 0.8rem;
   font-weight: 600;
-  text-shadow: 0 0 8px rgba(0, 255, 65, 0.3);
-  border: 1px solid rgba(0, 255, 65, 0.2);
+  border: 1px solid rgba(100, 100, 100, 0.3);
 }
 
 [data-theme='light'] .footer-links a:hover {
-  background: rgba(0, 0, 0, 0.6);
-  color: #b0ffb0;
+  background: rgba(220, 220, 220, 0.95);
+  color: #000000;
 }
 
 [data-theme='light'] .footer-links svg {
-  fill: #00FF41;
+  fill: #333333;
 }
 
 [data-theme='light'] .site-footer p {
-  color: #7adf7a;
-  text-shadow: 0 0 8px rgba(0, 255, 65, 0.3);
+  color: #333333;
 }
 
 /* About page links */
 [data-theme='light'] .about-links li {
-  border-bottom-color: rgba(0, 255, 65, 0.1);
+  border-bottom-color: rgba(100, 100, 100, 0.2);
 }
 
 [data-theme='light'] .about-links svg {
-  fill: #00FF41;
+  fill: #333333;
 }
 
-/* Container - dark glass for content area */
+/* Container - gray for content area */
 [data-theme='light'] .container {
-  background: rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background: rgba(180, 180, 180, 0.85);
   border-radius: 12px;
   padding: 1.5rem;
   margin-top: 1rem;
@@ -544,6 +495,99 @@ img { max-width: 100%; height: auto; }
 
 [data-theme='light'] .black-hole-container { display: none; }
 [data-theme='light'] .sun-container { display: block; }
+
+/* Light mode: orange to yellow to white gradient emanating from center */
+[data-theme='light'] .sun-container {
+  background: radial-gradient(ellipse at center, 
+    #ff7043 0%,
+    #ff8a65 8%,
+    #ffa726 15%,
+    #ffca28 25%,
+    #ffee58 35%,
+    #fff59d 45%,
+    #fff9c4 55%,
+    #fffde0 65%,
+    #fffef5 75%,
+    #ffffff 85%,
+    #ffffff 100%
+  );
+}
+
+/* Light mode: make corona less circular, more diffused/organic */
+[data-theme='light'] .sun-corona-outer {
+  border-radius: 45% 55% 48% 52% / 52% 48% 55% 45%;
+  width: 550px; height: 480px;
+  filter: blur(35px);
+  animation: corona-morph 12s ease-in-out infinite;
+}
+
+[data-theme='light'] .sun-corona-inner {
+  border-radius: 52% 48% 45% 55% / 48% 52% 50% 50%;
+  width: 320px; height: 280px;
+  filter: blur(25px);
+  animation: corona-morph 8s ease-in-out infinite reverse;
+}
+
+@keyframes corona-morph {
+  0%, 100% { 
+    border-radius: 45% 55% 48% 52% / 52% 48% 55% 45%;
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+  }
+  25% { 
+    border-radius: 55% 45% 52% 48% / 45% 55% 48% 52%;
+    transform: translate(-50%, -50%) scale(1.05) rotate(5deg);
+  }
+  50% { 
+    border-radius: 48% 52% 55% 45% / 55% 45% 52% 48%;
+    transform: translate(-50%, -50%) scale(0.98) rotate(-3deg);
+  }
+  75% { 
+    border-radius: 52% 48% 45% 55% / 48% 52% 45% 55%;
+    transform: translate(-50%, -50%) scale(1.03) rotate(2deg);
+  }
+}
+
+/* Light mode: softer, more diffused streamers */
+[data-theme='light'] .streamer {
+  width: 8px;
+  opacity: 0.5;
+  filter: blur(8px);
+}
+
+[data-theme='light'] .streamer::before {
+  width: 30px;
+  filter: blur(12px);
+}
+
+/* Light mode: less circular chromosphere and photosphere */
+[data-theme='light'] .sun-chromosphere {
+  border-radius: 48% 52% 45% 55% / 52% 48% 55% 45%;
+  width: 190px; height: 175px;
+  filter: blur(3px);
+  animation: sun-surface-morph 15s ease-in-out infinite;
+}
+
+[data-theme='light'] .sun-photosphere {
+  border-radius: 52% 48% 55% 45% / 45% 55% 48% 52%;
+  width: 175px; height: 165px;
+  animation: sun-surface-morph 10s ease-in-out infinite reverse;
+}
+
+[data-theme='light'] .sun-limb-darkening {
+  border-radius: 52% 48% 55% 45% / 45% 55% 48% 52%;
+}
+
+@keyframes sun-surface-morph {
+  0%, 100% { 
+    border-radius: 52% 48% 55% 45% / 45% 55% 48% 52%;
+  }
+  33% { 
+    border-radius: 48% 52% 45% 55% / 55% 45% 52% 48%;
+  }
+  66% { 
+    border-radius: 55% 45% 52% 48% / 48% 52% 45% 55%;
+  }
+}
 
 /* ============================================
    NASA-Inspired Realistic Sun Animation
@@ -1905,6 +1949,8 @@ img { max-width: 100%; height: auto; }
 [data-theme='light'] .parallax-container {
   background: rgba(0, 0, 0, 0.5);
   border: 1px solid rgba(0, 255, 65, 0.3);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 .parallax-post {
@@ -1928,11 +1974,49 @@ img { max-width: 100%; height: auto; }
 [data-theme='light'] .parallax-post {
   background: rgba(0, 0, 0, 0.35);
   border: 1px solid rgba(0, 255, 65, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 [data-theme='light'] .parallax-post:hover {
   background: rgba(0, 0, 0, 0.5);
   border-color: rgba(0, 255, 65, 0.5);
+}
+
+/* Parallax page keeps original green styling in light mode */
+[data-theme='light'] .parallax-page .section-header {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+[data-theme='light'] .parallax-page h1,
+[data-theme='light'] .parallax-page h2,
+[data-theme='light'] .parallax-page h3,
+[data-theme='light'] .parallax-page .section-title,
+[data-theme='light'] .parallax-page .post-item-title a {
+  color: #00FF41;
+  text-shadow: 0 0 12px rgba(0, 255, 65, 0.5);
+}
+
+[data-theme='light'] .parallax-page p,
+[data-theme='light'] .parallax-page .post-excerpt,
+[data-theme='light'] .parallax-page .section-subtitle {
+  color: #b0ffb0;
+}
+
+[data-theme='light'] .parallax-page .post-date {
+  color: #7adf7a;
+}
+
+[data-theme='light'] .parallax-page .category-tag {
+  background: rgba(0, 0, 0, 0.4);
+  color: #00FF41;
+  border: 1px solid rgba(0, 255, 65, 0.3);
+}
+
+[data-theme='light'] .parallax-page .section-divider {
+  background: linear-gradient(90deg, transparent, rgba(0, 255, 65, 0.5), transparent);
 }
 
 /* Hide default backgrounds on parallax page */

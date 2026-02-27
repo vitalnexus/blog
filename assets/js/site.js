@@ -226,6 +226,81 @@
     }
   }
 
+  // --- Light Mode Scroll Transparency ---
+  function initScrollTransparency() {
+    var parallaxPage = document.querySelector('.parallax-page');
+    if (parallaxPage) return; // Don't apply on parallax page
+
+    var contentElements = [];
+    var scrollTimeout = null;
+    var isScrolling = false;
+
+    function setOpacity(opacity) {
+      contentElements.forEach(function(el) {
+        el.style.transition = 'opacity 0.3s ease';
+        el.style.opacity = opacity;
+      });
+    }
+
+    function onScrollEnd() {
+      isScrolling = false;
+      var theme = document.documentElement.getAttribute('data-theme');
+      if (theme === 'light') {
+        setOpacity('1'); // Return to full opacity when scroll stops
+      }
+    }
+
+    function onScroll() {
+      var theme = document.documentElement.getAttribute('data-theme');
+      if (theme !== 'light') {
+        // Reset opacity for dark mode
+        contentElements.forEach(function(el) {
+          el.style.opacity = '';
+          el.style.transition = '';
+        });
+        return;
+      }
+
+      // While scrolling, set to 30% opacity
+      if (!isScrolling) {
+        isScrolling = true;
+        setOpacity('0.3');
+      }
+
+      // Clear previous timeout and set new one
+      if (scrollTimeout) {
+        clearTimeout(scrollTimeout);
+      }
+      scrollTimeout = setTimeout(onScrollEnd, 150); // Return to normal 150ms after scroll stops
+    }
+
+    function cacheElements() {
+      contentElements = Array.prototype.slice.call(
+        document.querySelectorAll('.container, .card, .post-item, .section-header, .hero, .site-header, .site-footer, .profile-banner, .game-card')
+      );
+    }
+
+    // Initialize
+    cacheElements();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    
+    // Re-check when theme changes
+    var observer = new MutationObserver(function(mutations) {
+      mutations.forEach(function(mutation) {
+        if (mutation.attributeName === 'data-theme') {
+          var theme = document.documentElement.getAttribute('data-theme');
+          if (theme !== 'light') {
+            contentElements.forEach(function(el) {
+              el.style.opacity = '';
+              el.style.transition = '';
+            });
+          }
+        }
+      });
+    });
+    observer.observe(document.documentElement, { attributes: true });
+  }
+
   // --- Init ---
   function init() {
     createStarField();
@@ -234,6 +309,7 @@
     initMatrixEasterEgg();
     initGlitchText();
     initParallaxPage();
+    initScrollTransparency();
   }
 
   if (document.readyState === 'loading') {
