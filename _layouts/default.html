@@ -1,10 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | truncatewords: 50 }}">
+  <script>
+    (function () {
+      var fallbackTheme = 'dark';
+      try {
+        var stored = localStorage.getItem('lir-theme');
+        if (stored === 'light' || stored === 'dark') {
+          fallbackTheme = stored;
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+          fallbackTheme = 'light';
+        }
+      } catch (err) {
+        fallbackTheme = 'dark';
+      }
+      document.documentElement.setAttribute('data-theme', fallbackTheme);
+    })();
+  </script>
   <link rel="icon" href="https://yt3.googleusercontent.com/EWIbmC28dR4JnEUXg8rBjPKEFEXUrfkVy0_BDXcr_dlSzAbHnkfu5h0Vid3brKEWYYcYn-DV7Q=s160-c-k-c0x00ffffff-no-rj" type="image/png">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   {% feed_meta %}
@@ -37,19 +53,32 @@
       Look Into My Realm
       <span class="logo-sub">by GAM3RGAWD</span>
     </a>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M3 12h18M3 6h18M3 18h18"/>
-      </svg>
-    </button>
-    <nav class="site-nav" id="siteNav">
+    <div class="site-actions">
+      <nav class="site-nav" id="siteNav">
       <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a>
       <a href="{{ '/posts' | relative_url }}" {% if page.url == '/posts/' %}class="active"{% endif %}>Posts</a>
       <a href="{{ '/gaming' | relative_url }}" {% if page.url == '/gaming/' %}class="active"{% endif %}>Gaming Hub</a>
       <a href="{{ '/live-review' | relative_url }}" {% if page.url == '/live-review/' %}class="active"{% endif %}>Live Reviews</a>
       <a href="{{ '/games' | relative_url }}" {% if page.url == '/games/' %}class="active"{% endif %}>AI Games</a>
       <a href="{{ '/about' | relative_url }}" {% if page.url == '/about/' %}class="active"{% endif %}>About</a>
-    </nav>
+      </nav>
+      <div class="header-controls">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light mode">
+          <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5.64 5.64L4.22 4.22M19.78 19.78l-1.42-1.42M5.64 18.36L4.22 19.78M19.78 4.22l-1.42 1.42"></path>
+          </svg>
+          <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2" aria-hidden="true">
+            <path d="M21 12.8A9 9 0 0111.2 3a7 7 0 109.8 9.8z"></path>
+          </svg>
+        </button>
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 12h18M3 6h18M3 18h18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
   </header>
 
   <!-- Content -->

@@ -40,6 +40,73 @@
     });
   }
 
+  // --- Theme Toggle ---
+  var themeStorageKey = 'lir-theme';
+
+  function getStoredTheme() {
+    try {
+      return localStorage.getItem(themeStorageKey);
+    } catch (err) {
+      return null;
+    }
+  }
+
+  function storeTheme(theme) {
+    try {
+      localStorage.setItem(themeStorageKey, theme);
+    } catch (err) {
+      // ignore storage errors
+    }
+  }
+
+  function getPreferredTheme() {
+    var stored = getStoredTheme();
+    if (stored === 'light' || stored === 'dark') {
+      return stored;
+    }
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+      return 'light';
+    }
+    return 'dark';
+  }
+
+  function applyTheme(theme, persist) {
+    if (theme !== 'light' && theme !== 'dark') return;
+    document.documentElement.setAttribute('data-theme', theme);
+    var toggle = document.getElementById('themeToggle');
+    if (toggle) {
+      toggle.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+    }
+    if (persist) {
+      storeTheme(theme);
+    }
+  }
+
+  function initThemeToggle() {
+    var toggle = document.getElementById('themeToggle');
+    if (!toggle) return;
+
+    applyTheme(getPreferredTheme(), false);
+
+    toggle.addEventListener('click', function () {
+      var current = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+      applyTheme(current, true);
+    });
+
+    if (window.matchMedia) {
+      var mq = window.matchMedia('(prefers-color-scheme: light)');
+      var handleChange = function (event) {
+        if (getStoredTheme()) return;
+        applyTheme(event.matches ? 'light' : 'dark', false);
+      };
+      if (typeof mq.addEventListener === 'function') {
+        mq.addEventListener('change', handleChange);
+      } else if (typeof mq.addListener === 'function') {
+        mq.addListener(handleChange);
+      }
+    }
+  }
+
   // --- Matrix Easter Egg ---
   // Activated by typing "matrix" anywhere on the page
   var matrixBuffer = '';
@@ -151,6 +218,7 @@
   function init() {
     createStarField();
     initNavigation();
+    initThemeToggle();
     initMatrixEasterEgg();
     initGlitchText();
   }
