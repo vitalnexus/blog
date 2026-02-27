@@ -33,7 +33,8 @@ permalink: /live-review/
     {% endfor %}
   </ul>
 
-  {% if site.posts | where: "categories", "reviews" | size == 0 %}
+  {% assign review_posts = site.posts | where_exp: "post", "post.categories contains 'reviews'" %}
+  {% if review_posts.size == 0 %}
   <div class="card" style="text-align: center; padding: 2rem;">
     <p style="color: var(--text-dim);">No live reviews yet. Check back soon for deep dives into games that capture the soul.</p>
   </div>
