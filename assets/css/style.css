@@ -2243,25 +2243,7 @@ body:has(.parallax-page) .sun-container {
   flex: 1;
   overflow: hidden;
   position: relative;
-
-  /* CSS mask: transparent (30% opacity equivalent) at top,
-     fully opaque from 18% down, small fade at bottom.             */
-  -webkit-mask-image: linear-gradient(
-    to bottom,
-    rgba(0,0,0,0.00) 0%,
-    rgba(0,0,0,0.30) 4%,
-    rgba(0,0,0,1.00) 18%,
-    rgba(0,0,0,1.00) 88%,
-    rgba(0,0,0,0.15) 100%
-  );
-  mask-image: linear-gradient(
-    to bottom,
-    rgba(0,0,0,0.00) 0%,
-    rgba(0,0,0,0.30) 4%,
-    rgba(0,0,0,1.00) 18%,
-    rgba(0,0,0,1.00) 88%,
-    rgba(0,0,0,0.15) 100%
-  );
+  /* No mask — text is always 100% opacity; window bg fades instead */
 }
 
 /* The actual scrollable element — JS drives scrollTop */

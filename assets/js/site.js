@@ -358,18 +358,25 @@
       setTimeout(startScroll, 1200);
     }
 
+    // Drive window background alpha from scroll position.
+    // Works for both auto-scroll (rAF) and manual mouse-wheel scroll.
+    function updateBgAlpha() {
+      if (!windowEl) return;
+      var maxScroll = contentEl.scrollHeight - contentEl.clientHeight;
+      if (maxScroll <= 0) return;
+      var progress = Math.min(contentEl.scrollTop / maxScroll, 1);
+      // 0.80 (opaque) at top → 0.00 (fully transparent) at bottom
+      var alpha = 0.80 - (progress * 0.80);
+      windowEl.style.background = 'rgba(0,5,0,' + alpha.toFixed(3) + ')';
+    }
+
+    contentEl.addEventListener('scroll', updateBgAlpha);
+
     function startScroll() {
       if (headerTitleEl) headerTitleEl.classList.add('glowing');
       function tick() {
         var maxScroll = contentEl.scrollHeight - contentEl.clientHeight;
         var atBottom  = contentEl.scrollTop >= maxScroll - 2;
-
-        // Fade window background: 0.80 → 0.24 (30%) as scroll progresses
-        if (windowEl && maxScroll > 0) {
-          var progress = Math.min(contentEl.scrollTop / maxScroll, 1);
-          var alpha = 0.80 - (progress * 0.56); // 0.80 at top, 0.24 at bottom
-          windowEl.style.background = 'rgba(0,5,0,' + alpha.toFixed(3) + ')';
-        }
 
         if (atBottom) {
           // Loop: pause at bottom then reset to top
@@ -402,11 +409,11 @@
       });
     }
 
-    // Pause scroll on hover, resume on leave
+    // Pause auto-scroll on hover so user can read / scroll manually.
+    // Background alpha continues to track scroll position via the 'scroll' listener.
     contentEl.addEventListener('mouseenter', function() {
       if (scrollRaf) { cancelAnimationFrame(scrollRaf); scrollRaf = null; }
       if (headerTitleEl) headerTitleEl.classList.remove('glowing');
-      if (windowEl) windowEl.style.background = 'rgba(0,5,0,0.80)';
     });
     contentEl.addEventListener('mouseleave', function() {
       if (!scrollRaf) startScroll();
