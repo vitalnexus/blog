@@ -301,6 +301,111 @@
     observer.observe(document.documentElement, { attributes: true });
   }
 
+  // --- Random Read Page ---
+  function initRandomRead() {
+    var page = document.querySelector('.rr-page');
+    if (!page) return;
+
+    // Hide default site backgrounds
+    var blackHole = document.querySelector('.black-hole-container');
+    var sun = document.querySelector('.sun-container');
+    if (blackHole) blackHole.style.display = 'none';
+    if (sun) sun.style.display = 'none';
+
+    var postsDataEl  = document.getElementById('rrPostsData');
+    var titleEl      = document.getElementById('rrTitle');
+    var headerTitleEl= document.getElementById('rrHeaderTitle');
+    var bodyEl       = document.getElementById('rrBody');
+    var dateEl       = document.getElementById('rrDate');
+    var catsEl       = document.getElementById('rrCategories');
+    var linkEl       = document.getElementById('rrFullLink');
+    var contentEl    = document.getElementById('rrContent');
+    var shuffleBtn   = document.getElementById('rrShuffle');
+    var windowEl     = page.querySelector('.rr-window');
+
+    if (!postsDataEl || !contentEl) return;
+
+    var posts = [];
+    try { posts = JSON.parse(postsDataEl.textContent); } catch(e) {}
+    if (!posts.length) return;
+
+    var scrollRaf = null;
+    var scrollSpeed = 0.4; // px per frame (~24px/sec at 60fps)
+
+    function loadPost(post) {
+      // Stop any running scroll
+      if (scrollRaf) { cancelAnimationFrame(scrollRaf); scrollRaf = null; }
+
+      titleEl.textContent       = post.title;
+      if (headerTitleEl) headerTitleEl.textContent = post.title;
+      bodyEl.textContent        = post.content;
+      if (dateEl)  dateEl.textContent  = post.date;
+      if (catsEl)  catsEl.textContent  = post.categories ? post.categories.join(' · ') : '';
+      if (linkEl)  linkEl.href         = post.url;
+
+      // Reset scroll position and window opacity to top
+      contentEl.scrollTop = 0;
+      if (windowEl) windowEl.style.background = 'rgba(0,5,0,0.80)';
+
+      // Short pause before auto-scroll begins
+      setTimeout(startScroll, 1200);
+    }
+
+    function startScroll() {
+      if (headerTitleEl) headerTitleEl.classList.add('glowing');
+      function tick() {
+        var maxScroll = contentEl.scrollHeight - contentEl.clientHeight;
+        var atBottom  = contentEl.scrollTop >= maxScroll - 2;
+
+        // Fade window background: 0.80 → 0.24 (30%) as scroll progresses
+        if (windowEl && maxScroll > 0) {
+          var progress = Math.min(contentEl.scrollTop / maxScroll, 1);
+          var alpha = 0.80 - (progress * 0.56); // 0.80 at top, 0.24 at bottom
+          windowEl.style.background = 'rgba(0,5,0,' + alpha.toFixed(3) + ')';
+        }
+
+        if (atBottom) {
+          // Loop: pause at bottom then reset to top
+          if (headerTitleEl) headerTitleEl.classList.remove('glowing');
+          setTimeout(function() {
+            contentEl.scrollTop = 0;
+            if (windowEl) windowEl.style.background = 'rgba(0,5,0,0.80)';
+            if (headerTitleEl) headerTitleEl.classList.add('glowing');
+            scrollRaf = requestAnimationFrame(tick);
+          }, 2000);
+          return;
+        }
+        contentEl.scrollTop += scrollSpeed;
+        scrollRaf = requestAnimationFrame(tick);
+      }
+      scrollRaf = requestAnimationFrame(tick);
+    }
+
+    function pickRandom() {
+      return posts[Math.floor(Math.random() * posts.length)];
+    }
+
+    // Load initial random post
+    loadPost(pickRandom());
+
+    // Shuffle button
+    if (shuffleBtn) {
+      shuffleBtn.addEventListener('click', function() {
+        loadPost(pickRandom());
+      });
+    }
+
+    // Pause scroll on hover, resume on leave
+    contentEl.addEventListener('mouseenter', function() {
+      if (scrollRaf) { cancelAnimationFrame(scrollRaf); scrollRaf = null; }
+      if (headerTitleEl) headerTitleEl.classList.remove('glowing');
+      if (windowEl) windowEl.style.background = 'rgba(0,5,0,0.80)';
+    });
+    contentEl.addEventListener('mouseleave', function() {
+      if (!scrollRaf) startScroll();
+    });
+  }
+
   // --- Init ---
   function init() {
     createStarField();
@@ -309,6 +414,7 @@
     initMatrixEasterEgg();
     initGlitchText();
     initParallaxPage();
+    initRandomRead();
     initScrollTransparency();
   }
 
