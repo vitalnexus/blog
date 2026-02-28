@@ -358,7 +358,7 @@
       // Reset scroll position — window starts transparent so background is fully visible
       contentEl.scrollTop = 0;
       if (windowEl) windowEl.style.background = 'rgba(0,5,0,0.00)';
-      setHint('↑ auto-scrolling');
+      setHint('↑ scroll to keep reading');
 
       // Short pause before auto-scroll begins
       setTimeout(startScroll, 1200);
@@ -389,13 +389,15 @@
           if (headerTitleEl) headerTitleEl.classList.remove('glowing');
           var countdown = 5;
           setHint('Loading next Random Post in ' + countdown);
+          if (hintEl) hintEl.classList.add('counting');
           var countInterval = setInterval(function() {
             countdown--;
             if (countdown > 0) {
               setHint('Loading next Random Post in ' + countdown);
             } else {
               clearInterval(countInterval);
-              setHint('↑ auto-scrolling');
+              if (hintEl) hintEl.classList.remove('counting');
+              setHint('↑ scroll to keep reading');
               loadPost(pickRandom());
             }
           }, 1000);

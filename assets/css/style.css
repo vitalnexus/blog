@@ -2301,6 +2301,18 @@ body:has(.parallax-page) .sun-container {
   font-size: 0.72rem;
   color: var(--rr-text-dim);
   animation: rr-pulse 2.5s ease-in-out infinite;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* During countdown: match the title's brightness and glow */
+.rr-scroll-hint.counting {
+  color: #ffffff;
+  animation: none;
+  opacity: 1;
+  text-shadow:
+    0 0  6px rgba(0, 255, 65, 0.90),
+    0 0 14px rgba(0, 255, 65, 0.60),
+    0 0 28px rgba(0, 255, 65, 0.25);
 }
 
 @keyframes rr-pulse {
