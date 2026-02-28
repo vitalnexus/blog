@@ -350,24 +350,23 @@
       if (catsEl)  catsEl.textContent  = post.categories ? post.categories.join(' · ') : '';
       if (linkEl)  linkEl.href         = post.url;
 
-      // Reset scroll position and window opacity to top
+      // Reset scroll position — window starts transparent so background is fully visible
       contentEl.scrollTop = 0;
-      if (windowEl) windowEl.style.background = 'rgba(0,5,0,0.80)';
+      if (windowEl) windowEl.style.background = 'rgba(0,5,0,0.00)';
 
       // Short pause before auto-scroll begins
       setTimeout(startScroll, 1200);
     }
 
-    // While scrolling (auto or manual): window becomes transparent so the
-    // background image shows through behind the text at full opacity.
-    // When scrolling stops, window fades back to opaque black.
+    // While scrolling: window adds a 15% dark tint, slightly dimming the background.
+    // When scrolling stops: window returns to transparent so background is fully visible.
     var scrollStopTimer = null;
     function onScrollActivity() {
       if (!windowEl) return;
-      windowEl.style.background = 'rgba(0,5,0,0.00)'; // transparent while scrolling
+      windowEl.style.background = 'rgba(0,5,0,0.15)'; // 15% dim while scrolling
       if (scrollStopTimer) clearTimeout(scrollStopTimer);
       scrollStopTimer = setTimeout(function() {
-        if (windowEl) windowEl.style.background = 'rgba(0,5,0,0.85)'; // opaque when stopped
+        if (windowEl) windowEl.style.background = 'rgba(0,5,0,0.00)'; // transparent when stopped
       }, 600);
     }
 
@@ -384,7 +383,7 @@
           if (headerTitleEl) headerTitleEl.classList.remove('glowing');
           setTimeout(function() {
             contentEl.scrollTop = 0;
-            if (windowEl) windowEl.style.background = 'rgba(0,5,0,0.80)';
+            if (windowEl) windowEl.style.background = 'rgba(0,5,0,0.00)';
             if (headerTitleEl) headerTitleEl.classList.add('glowing');
             scrollRaf = requestAnimationFrame(tick);
           }, 2000);
