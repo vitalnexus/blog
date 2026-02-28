@@ -35,7 +35,7 @@ permalink: /random-read/
     </div>
 
     <div class="rr-window-footer">
-      <span class="rr-scroll-hint">↑ auto-scrolling</span>
+      <span class="rr-scroll-hint" id="rrScrollHint">↑ auto-scrolling</span>
       <button class="rr-shuffle" id="rrShuffle" type="button">⟳ New Post</button>
     </div>
   </div>

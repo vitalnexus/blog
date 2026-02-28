@@ -338,6 +338,11 @@
 
     var scrollRaf = null;
     var scrollSpeed = 0.4; // px per frame (~24px/sec at 60fps)
+    var hintEl = document.getElementById('rrScrollHint');
+
+    function setHint(text) {
+      if (hintEl) hintEl.textContent = text;
+    }
 
     function loadPost(post) {
       // Stop any running scroll
@@ -353,6 +358,7 @@
       // Reset scroll position — window starts transparent so background is fully visible
       contentEl.scrollTop = 0;
       if (windowEl) windowEl.style.background = 'rgba(0,5,0,0.00)';
+      setHint('↑ auto-scrolling');
 
       // Short pause before auto-scroll begins
       setTimeout(startScroll, 1200);
@@ -379,14 +385,20 @@
         var atBottom  = contentEl.scrollTop >= maxScroll - 2;
 
         if (atBottom) {
-          // Loop: pause at bottom then reset to top
+          // Countdown then load a new random post
           if (headerTitleEl) headerTitleEl.classList.remove('glowing');
-          setTimeout(function() {
-            contentEl.scrollTop = 0;
-            if (windowEl) windowEl.style.background = 'rgba(0,5,0,0.00)';
-            if (headerTitleEl) headerTitleEl.classList.add('glowing');
-            scrollRaf = requestAnimationFrame(tick);
-          }, 2000);
+          var countdown = 5;
+          setHint('Loading next Random Post in ' + countdown);
+          var countInterval = setInterval(function() {
+            countdown--;
+            if (countdown > 0) {
+              setHint('Loading next Random Post in ' + countdown);
+            } else {
+              clearInterval(countInterval);
+              setHint('↑ auto-scrolling');
+              loadPost(pickRandom());
+            }
+          }, 1000);
           return;
         }
         contentEl.scrollTop += scrollSpeed;
