@@ -19,6 +19,7 @@ permalink: /posts/
     <button class="category-btn" onclick="filterPosts('technology')">Technology</button>
     <button class="category-btn" onclick="filterPosts('gaming')">Gaming</button>
     <button class="category-btn" onclick="filterPosts('space-travel')">Space Travel</button>
+    <button class="category-btn" onclick="filterPosts('ai-content')">AI Content</button>
   </div>
 
   <ul class="post-list" id="postList">

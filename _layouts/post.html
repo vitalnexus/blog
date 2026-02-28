@@ -26,6 +26,16 @@ layout: default
       {% endfor %}
     </div>
     {% endif %}
+
+    {% if page.next.url %}
+    <div class="read-next-wrap">
+      <a href="{{ page.next.url | relative_url }}" class="read-next-btn">
+        <span class="read-next-label">Up next</span>
+        <span class="read-next-title">{{ page.next.title }}</span>
+        <span class="read-next-arrow">&rarr;</span>
+      </a>
+    </div>
+    {% endif %}
   </article>
 
   <nav class="post-nav">
