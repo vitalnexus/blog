@@ -363,7 +363,7 @@
     var scrollStopTimer = null;
     function onScrollActivity() {
       if (!windowEl) return;
-      windowEl.style.background = 'rgba(0,5,0,0.25)'; // 25% dim while scrolling
+      windowEl.style.background = 'rgba(0,5,0,0.75)'; // 75% dim while scrolling
       if (scrollStopTimer) clearTimeout(scrollStopTimer);
       scrollStopTimer = setTimeout(function() {
         if (windowEl) windowEl.style.background = 'rgba(0,5,0,0.00)'; // transparent when stopped
