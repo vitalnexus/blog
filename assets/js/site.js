@@ -407,8 +407,16 @@
       scrollRaf = requestAnimationFrame(tick);
     }
 
+    var lastPostIndex = -1;
+
     function pickRandom() {
-      return posts[Math.floor(Math.random() * posts.length)];
+      if (posts.length === 1) return posts[0];
+      var idx;
+      do {
+        idx = Math.floor(Math.random() * posts.length);
+      } while (idx === lastPostIndex);
+      lastPostIndex = idx;
+      return posts[idx];
     }
 
     // Load initial random post

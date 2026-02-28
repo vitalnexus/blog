@@ -2304,7 +2304,7 @@ body:has(.parallax-page) .sun-container {
 }
 
 @keyframes rr-pulse {
-  0%, 100% { opacity: 0.40; }
+  0%, 100% { opacity: 0.65; }
   50%       { opacity: 1.00; }
 }
 
