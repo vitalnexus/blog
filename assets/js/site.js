@@ -358,19 +358,20 @@
       setTimeout(startScroll, 1200);
     }
 
-    // Drive window background alpha from scroll position.
-    // Works for both auto-scroll (rAF) and manual mouse-wheel scroll.
-    function updateBgAlpha() {
+    // While scrolling (auto or manual): window becomes transparent so the
+    // background image shows through behind the text at full opacity.
+    // When scrolling stops, window fades back to opaque black.
+    var scrollStopTimer = null;
+    function onScrollActivity() {
       if (!windowEl) return;
-      var maxScroll = contentEl.scrollHeight - contentEl.clientHeight;
-      if (maxScroll <= 0) return;
-      var progress = Math.min(contentEl.scrollTop / maxScroll, 1);
-      // 0.80 (opaque) at top → 0.00 (fully transparent) at bottom
-      var alpha = 0.80 - (progress * 0.80);
-      windowEl.style.background = 'rgba(0,5,0,' + alpha.toFixed(3) + ')';
+      windowEl.style.background = 'rgba(0,5,0,0.00)'; // transparent while scrolling
+      if (scrollStopTimer) clearTimeout(scrollStopTimer);
+      scrollStopTimer = setTimeout(function() {
+        if (windowEl) windowEl.style.background = 'rgba(0,5,0,0.85)'; // opaque when stopped
+      }, 600);
     }
 
-    contentEl.addEventListener('scroll', updateBgAlpha);
+    contentEl.addEventListener('scroll', onScrollActivity);
 
     function startScroll() {
       if (headerTitleEl) headerTitleEl.classList.add('glowing');
