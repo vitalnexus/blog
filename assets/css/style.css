@@ -99,6 +99,16 @@
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
+[data-theme='light'] .game-card--perfect {
+  border-color: rgba(180, 140, 0, 0.5);
+  box-shadow: 0 2px 12px rgba(180, 140, 0, 0.15);
+}
+
+[data-theme='light'] .game-card--perfect:hover {
+  border-color: rgba(180, 140, 0, 0.8);
+  box-shadow: 0 8px 25px rgba(180, 140, 0, 0.25);
+}
+
 /* Site Header - gray solid */
 [data-theme='light'] .site-header {
   background: rgba(180, 180, 180, 0.9);
@@ -1622,6 +1632,7 @@ img { max-width: 100%; height: auto; }
 
 .grid-2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
 .grid-3 { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+.grid-4 { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
 
 /* --- Stats Panel --- */
 .stat-row {
@@ -1648,6 +1659,16 @@ img { max-width: 100%; height: auto; }
   transform: translateY(-3px);
   border-color: rgba(0, 255, 65, 0.4);
   box-shadow: 0 8px 30px rgba(0, 255, 65, 0.08);
+}
+
+.game-card--perfect {
+  border-color: rgba(255, 204, 0, 0.45);
+  box-shadow: 0 0 18px rgba(255, 204, 0, 0.12);
+}
+
+.game-card--perfect:hover {
+  border-color: rgba(255, 204, 0, 0.75);
+  box-shadow: 0 8px 30px rgba(255, 204, 0, 0.22);
 }
 
 .game-card-title {

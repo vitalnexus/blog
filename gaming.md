@@ -61,6 +61,49 @@ permalink: /gaming/
 
   <p class="gaming-mission-text">Mission Control access granted</p>
 
+  <h3 class="section-title" style="font-size: 1.1rem; margin: 0 0 0.75rem; letter-spacing: 0.15em; text-transform: uppercase;">
+    <span style="color: var(--green); opacity: 0.6;">&#x2014;&nbsp;</span>100% Completion<span style="color: var(--green); opacity: 0.6;">&nbsp;&#x2014;</span>
+  </h3>
+
+  <div class="grid grid-4" style="margin-bottom: 2.5rem;">
+    <div class="game-card game-card--perfect">
+      <h3 class="game-card-title">Astroneer</h3>
+      <p class="game-card-genre">Exploration / Sandbox</p>
+      <div class="badge-row">
+        <span class="badge badge-gold">100% Complete</span>
+        <span class="badge badge-green">Perfect Game</span>
+      </div>
+    </div>
+    <div class="game-card game-card--perfect">
+      <h3 class="game-card-title">Subnautica</h3>
+      <p class="game-card-genre">Survival / Exploration</p>
+      <div class="badge-row">
+        <span class="badge badge-gold">100% Complete</span>
+        <span class="badge badge-green">Perfect Game</span>
+      </div>
+    </div>
+    <div class="game-card game-card--perfect">
+      <h3 class="game-card-title">Subnautica: Below Zero</h3>
+      <p class="game-card-genre">Survival / Exploration</p>
+      <div class="badge-row">
+        <span class="badge badge-gold">100% Complete</span>
+        <span class="badge badge-green">Perfect Game</span>
+      </div>
+    </div>
+    <div class="game-card game-card--perfect">
+      <h3 class="game-card-title">Breathedge</h3>
+      <p class="game-card-genre">Survival / Comedy</p>
+      <div class="badge-row">
+        <span class="badge badge-gold">100% Complete</span>
+        <span class="badge badge-green">Perfect Game</span>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="section-title" style="font-size: 1.1rem; margin: 0 0 0.75rem; letter-spacing: 0.15em; text-transform: uppercase;">
+    <span style="color: var(--green); opacity: 0.6;">&#x2014;&nbsp;</span>Full Library<span style="color: var(--green); opacity: 0.6;">&nbsp;&#x2014;</span>
+  </h3>
+
   <div class="grid grid-3">
     <div class="game-card">
       <h3 class="game-card-title">Subnautica</h3>
