@@ -186,6 +186,12 @@
   text-shadow: none;
 }
 
+[data-theme='light'] .gaming-mission-text {
+  color: #111111;
+  text-shadow: none;
+  animation: gaming-mission-fade 5s ease-in-out infinite;
+}
+
 [data-theme='light'] .hero-tagline {
   color: #333333;
 }
@@ -1253,6 +1259,21 @@ img { max-width: 100%; height: auto; }
   color: var(--text-dim);
   letter-spacing: 0.2em;
   text-transform: uppercase;
+}
+
+.gaming-mission-text {
+  font-size: 1.6rem;
+  color: var(--green);
+  text-shadow: 0 0 40px var(--green-glow), 0 0 80px rgba(0, 255, 65, 0.2);
+  text-align: center;
+  letter-spacing: 0.08em;
+  margin: 1rem 0 2rem;
+  animation: gaming-mission-fade 5s ease-in-out infinite;
+}
+
+@keyframes gaming-mission-fade {
+  0%, 100% { opacity: 1; text-shadow: 0 0 40px var(--green-glow), 0 0 80px rgba(0,255,65,0.2); }
+  50%       { opacity: 0.15; text-shadow: none; }
 }
 
 @keyframes hero-glow {

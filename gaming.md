@@ -59,6 +59,8 @@ permalink: /gaming/
     <div class="section-divider"></div>
   </div>
 
+  <p class="gaming-mission-text">Mission Control access granted</p>
+
   <div class="grid grid-3">
     <div class="game-card">
       <h3 class="game-card-title">Subnautica</h3>
