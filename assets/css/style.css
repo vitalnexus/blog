@@ -2055,6 +2055,7 @@ body:has(.parallax-page) .sun-container {
   inset: 0;
   overflow: hidden;
   background: #000;
+  z-index: 999;
   /* Force dark palette regardless of theme */
   --rr-green:       #00FF41;
   --rr-green-dim:   #00cc33;

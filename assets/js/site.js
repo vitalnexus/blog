@@ -306,6 +306,13 @@
     var page = document.querySelector('.rr-page');
     if (!page) return;
 
+    // Escape .site-content stacking context (z-index:1) so the fixed overlay
+    // renders above .site-header (z-index:1000).  Moving to <body> makes the
+    // fixed element's stacking parent the root viewport.
+    if (page.parentElement !== document.body) {
+      document.body.appendChild(page);
+    }
+
     // Hide default site backgrounds
     var blackHole = document.querySelector('.black-hole-container');
     var sun = document.querySelector('.sun-container');
