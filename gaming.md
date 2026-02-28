@@ -16,7 +16,7 @@ permalink: /gaming/
     <div class="profile-info">
       <h2>GAM3RGAWD</h2>
       <p class="profile-status">Online</p>
-      <p style="color: var(--text-dim); margin-top: 0.3rem;">Steam Level 22 / 27 Badges / United States</p>
+      <p style="color: var(--text-dim); margin-top: 0.3rem;">Steam Level 22 / 27 Badges / Currently on: Earth</p>
       <p style="margin-top: 0.5rem;">
         <a href="https://steamcommunity.com/id/GAM3RGAWD" target="_blank" rel="noopener" style="font-size: 0.85rem;">View full Steam profile &rarr;</a>
       </p>
