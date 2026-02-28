@@ -2338,6 +2338,88 @@ body:has(.parallax-page) .sun-container {
   box-shadow: 0 0 14px var(--rr-green-glow);
 }
 
+/* ---- Light mode overrides — match site nav/header style ---- */
+[data-theme='light'] .rr-window {
+  border-color: rgba(100, 100, 100, 0.4);
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.15),
+    0 0 0 1px rgba(100, 100, 100, 0.2);
+}
+
+[data-theme='light'] .rr-window-header {
+  background: rgba(180, 180, 180, 0.92);
+  border-bottom-color: rgba(100, 100, 100, 0.35);
+}
+
+[data-theme='light'] .rr-header-top {
+  border-bottom-color: rgba(100, 100, 100, 0.2);
+}
+
+[data-theme='light'] .rr-window-footer {
+  background: rgba(180, 180, 180, 0.92);
+  border-top-color: rgba(100, 100, 100, 0.35);
+}
+
+[data-theme='light'] .rr-label {
+  color: #111111;
+  text-shadow: none;
+}
+
+[data-theme='light'] .rr-date {
+  color: #333333;
+}
+
+[data-theme='light'] .rr-categories {
+  color: #444444;
+}
+
+[data-theme='light'] .rr-full-link {
+  color: #111111;
+  border-color: rgba(100, 100, 100, 0.4);
+  background: rgba(200, 200, 200, 0.6);
+}
+
+[data-theme='light'] .rr-full-link:hover {
+  background: rgba(220, 220, 220, 0.95);
+  border-color: rgba(80, 80, 80, 0.6);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+[data-theme='light'] .rr-header-title {
+  color: #111111;
+  text-shadow: none;
+}
+
+[data-theme='light'] .rr-header-title.glowing {
+  color: #111111;
+  text-shadow:
+    0 0  6px rgba(0, 0, 0, 0.25),
+    0 0 12px rgba(0, 0, 0, 0.12);
+}
+
+[data-theme='light'] .rr-scroll-hint {
+  color: #333333;
+}
+
+[data-theme='light'] .rr-scroll-hint.counting {
+  color: #111111;
+  text-shadow:
+    0 0  6px rgba(0, 0, 0, 0.25),
+    0 0 12px rgba(0, 0, 0, 0.12);
+}
+
+[data-theme='light'] .rr-shuffle {
+  color: #111111;
+  background: rgba(200, 200, 200, 0.85);
+  border-color: rgba(100, 100, 100, 0.4);
+}
+
+[data-theme='light'] .rr-shuffle:hover {
+  background: rgba(220, 220, 220, 0.95);
+  border-color: rgba(80, 80, 80, 0.6);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
 /* ---- Hide default site backgrounds on this page ---- */
 body:has(.rr-page) .black-hole-container,
 body:has(.rr-page) .sun-container,
