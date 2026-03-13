@@ -351,7 +351,8 @@
       titleEl.textContent       = post.title;
       if (headerTitleEl) headerTitleEl.textContent = post.title;
       bodyEl.textContent        = post.content;
-      if (dateEl)  dateEl.textContent  = post.date;
+      var readMins = post.words ? Math.max(1, Math.round(post.words / 200)) : null;
+      if (dateEl)  dateEl.textContent  = post.date + (readMins ? '  ·  ' + readMins + ' min read' : '');
       if (catsEl)  catsEl.textContent  = post.categories ? post.categories.join(' · ') : '';
       if (linkEl)  linkEl.href         = post.url;
 

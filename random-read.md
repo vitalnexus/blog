@@ -49,6 +49,7 @@ permalink: /random-read/
         "url": "{{ post.url | relative_url }}",
         "content": {{ post.content | strip_html | jsonify }},
         "date": "{{ post.date | date: '%b %d, %Y' }}",
+        "words": {{ post.content | number_of_words }},
         "categories": {{ post.categories | jsonify }}
       }{% unless forloop.last %},{% endunless %}
       {% endfor %}
