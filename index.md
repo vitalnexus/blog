@@ -10,6 +10,30 @@ title: Look Into My Realm
 
 <div class="container">
 
+  <div class="grid grid-3" style="margin-bottom: 3rem;">
+    <div class="card">
+      <div class="card-header">
+        <h3 class="card-title">Gaming Hub</h3>
+      </div>
+      <p class="post-excerpt">Steam stats, game library, and everything from my 12+ years of gaming.</p>
+      <p style="margin-top: 1rem;"><a href="{{ '/gaming' | relative_url }}">Enter the hub &rarr;</a></p>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <h3 class="card-title">AI Games</h3>
+      </div>
+      <p class="post-excerpt">Playable retro games built with AI. Defender, Steve's Gate, and more to come.</p>
+      <p style="margin-top: 1rem;"><a href="{{ '/games' | relative_url }}">Play now &rarr;</a></p>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <h3 class="card-title">Game Logs</h3>
+      </div>
+      <p class="post-excerpt">Session logs, run notes, and deep dives into what I've been playing. Launch sequence incoming.</p>
+      <p style="margin-top: 1rem;"><a href="{{ '/under-construction' | relative_url }}">View logs &rarr;</a></p>
+    </div>
+  </div>
+
   <div class="section-header">
     <h2 class="section-title">Latest Transmissions</h2>
     <p class="section-subtitle">Dispatches from the cave</p>
@@ -34,29 +58,5 @@ title: Look Into My Realm
     </li>
     {% endfor %}
   </ul>
-
-  <div class="grid grid-3" style="margin-top: 3rem;">
-    <div class="card">
-      <div class="card-header">
-        <h3 class="card-title">Gaming Hub</h3>
-      </div>
-      <p class="post-excerpt">Steam stats, game library, and everything from my 12+ years of gaming.</p>
-      <p style="margin-top: 1rem;"><a href="{{ '/gaming' | relative_url }}">Enter the hub &rarr;</a></p>
-    </div>
-    <div class="card">
-      <div class="card-header">
-        <h3 class="card-title">AI Games</h3>
-      </div>
-      <p class="post-excerpt">Playable retro games built with AI. Defender, Steve's Gate, and more to come.</p>
-      <p style="margin-top: 1rem;"><a href="{{ '/games' | relative_url }}">Play now &rarr;</a></p>
-    </div>
-    <div class="card">
-      <div class="card-header">
-        <h3 class="card-title">Game Logs</h3>
-      </div>
-      <p class="post-excerpt">Session logs, run notes, and deep dives into what I've been playing. Launch sequence incoming.</p>
-      <p style="margin-top: 1rem;"><a href="{{ '/under-construction' | relative_url }}">View logs &rarr;</a></p>
-    </div>
-  </div>
 
 </div>
