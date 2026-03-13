@@ -2,7 +2,7 @@
 layout: post
 title: "Astroneer - A Masterpiece of Exploration"
 date: 2026-02-20
-categories: [reviews, gaming]
+categories: [reviews, gaming, space travel]
 tags: [astroneer, review, exploration, sandbox, space]
 author: GAM3RGAWD
 ---
