@@ -39,7 +39,7 @@ You can now automate resource collection using Extractors, build a train system 
 
 I and so many other Early Access users got to experience the good, bad and ugly of previous variations of the game's mechanics, how the platforms originally connected by dragging thick black tubes to build another platform, and modular space craft that allowed you to put seats and storage on it. To the present versions that have three levels of shuttles to build, small, medium and large.
 
-This three size approach is now consistently applied to all of the items in Astroneer. There are 3D printers, that are small, medium and large, to print platforms, machines and shuttles that are also small, medium and large. Small items fit in your backpack, medium items (when packaged, can be carried), large items can be moved but not carried. Anything can be moved, locked in place, or with some exceptions, even blown up! There's so much more to share, but let's me talk about playing with your friends, or other random Astroneers.
+This three size approach is now consistently applied to all of the items in Astroneer. There are 3D printers, that are small, medium and large, to print platforms, machines and shuttles that are also small, medium and large. Small items fit in your backpack, medium items (when packaged, can be carried), large items can be moved but not carried. Anything can be moved, locked in place, or with some exceptions, even blown up! There's so much more to share, but let me talk about playing with your friends, or other random Astroneers.
 
 ## Co-op
 
