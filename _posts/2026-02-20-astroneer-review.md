@@ -11,7 +11,7 @@ Some games grab you for a weekend. Astroneer grabbed me for 2250+ hours and I'm 
 
 I feel priviledged to have been able to even assist in the building of the original Discord Wiki pages. I went into the game and spent many, many hours, combing the planets, caves and biomes until I found at least one of every type of research, so that there were images, values and metrics on the wiki page. The Wiki was eventually deprecated and then System Era added an Astropedia, which can now be accessed in game. They've also added a tutorial to help you learn the basic mechanics of the game. Or, you can just jump into a new game, and fend for yourself.
 
-During the Early Access and even after 1.0 release, I started new games for each new event, and to me, being a person that was 9 when I watched the actual landing on the moon, I got chills and was transported back to that day when in this game, you can find the actual lunar lander, and then take a photo of your Astroneer on the lander, and you hear the actual audio of the moon landing taking place. Seeing the moon landing live on TV was truly the most memorable occasion of my life, and being able to revisit that era in Astroneer, was really what leads me to keep coming back to this game.
+During the Early Access and even after 1.0 release, I started new games for each new event, and to me, being a person that was 9 when I watched the actual landing on the moon. I got chills and was transported back to that day when in this game, you can find the actual lunar lander, and then take a photo of your Astroneer on the lander, and you hear the actual audio of the moon landing taking place. Seeing the moon landing live on TV was truly the most memorable occasion of my life, and being able to revisit that era in Astroneer, was really what leads me to keep coming back to this game.
 
 This game also introduced me to the aspect of speedrunning in games. Back when I was first learning how to live stream, setting up my Elgato Streamdeck, webcam and microphone, I also taught myself how to add metrics to track and submit my speed runs in games. I first did that with Astroneer. So it really does give me lots of memories and enjoyment jumping back into this fantastic, well designed and immersive game.
 
@@ -21,7 +21,7 @@ This game also introduced me to the aspect of speedrunning in games. Back when I
 
 ## What Is It
 
-Astroneer is a space exploration sandbox by System Era Softworks. You land on an alien planet with nothing but a starting shelter (habitat), a landing pad (that has a mission objectives interface connected to it) and you - as an Astroneer, with a backpack that has 11 small slots, an integrated oxygen tank, a battery pack, and your indespensible terrain tool.
+Astroneer is a space exploration sandbox by System Era Softworks. You land on a starting  planet (Sylva) with nothing but a starting shelter (habitat), a landing pad (that has a mission objectives interface connected to it) and you - as an Astroneer, with a backpack that has 11 small slots, an integrated oxygen tank, a battery pack, and your indespensible terrain tool.
 
  In your backpack, there are 11 slots to store things, 3 on your terrain tool, 6 in your backpack, and two additional slots. Those two slots on top of your backpack (left and right) that allow you to control them by turning it on or off with a toggle of your keyboard or controller. As you collect stuff, the collected (or grabbed) item auto deposits it into your backpack, or you can manually place it in any of your slots as you choose. If you're full, it drops on the ground, or falls down into that gaping crevass you just opened by digging up resources.
 
@@ -64,6 +64,10 @@ Some people didn't like it when System Era added a currency into the game - Cubi
  Which reminds me, way back, in the early version, there were storms. I loved the storms, different planets had different storms, and some had debris in them that could kill your Astroneer, so you had to take shelter from the storm, even if you had dig a quick hole to hide in. Other storms would blow away or scatter any resources or research not secured on or in a platform. In some cases, if you either blew up your base, or had a really bad storm, you'd see resources or research suspended in mid air, and you'd have to build a structure or use soil and build a ramp to collect your items again.
 
  The storms were permanently removed due to framerate and crashes, depending on how large your game save happened to be at the time. Thankfully, those issues are all now resolved. So over the course of time, System Era removed everything I didn't like. But I miss storms.
+
+ ## System Era Softworks
+
+ I can't really express how much I appreciate the game Astroneer without also talking about the people that made it. System Era Softworks, or System Era. Now, I've never met any of them in person. However, the Discord server, and the community there, can verify what I say here about how the System Era staff embraced community feedback and interacted with so many users including me - on that site, through podcasts, and indirectly through the outstanding documentary created by NoClip find it here: https://www.youtube.com/watch?v=tfUjl4owxTQ. NoClip is a YouTube channel that relies solely on Patreon subscribers and reviews games, game developers and is to this day - one of my favorite YouTube channels. Go check out Danny and his NoClip team at their channel: https://www.youtube.com/@NoclipDocs
 
 ## The Verdict
 
