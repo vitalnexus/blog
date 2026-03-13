@@ -16,6 +16,19 @@ layout: default
         {% endif %}
       </div>
     </header>
+    {% if page.steam_app_id %}
+    <div class="steam-review-meta">
+      <div class="steam-review-stat">
+        <span class="steam-review-label">Steam Rating</span>
+        <span class="steam-review-value steam-rating-{% if page.steam_rating == 'Recommended' %}recommended{% else %}not-recommended{% endif %}">{{ page.steam_rating }}</span>
+      </div>
+      <div class="steam-review-stat">
+        <span class="steam-review-label">Hours Played</span>
+        <span class="steam-review-value">{{ page.hours_played }} hrs</span>
+      </div>
+      <a class="steam-review-link" href="https://steamcommunity.com/id/GAM3RGAWD/recommended/{{ page.steam_app_id }}/" target="_blank" rel="noopener">View on Steam &rarr;</a>
+    </div>
+    {% endif %}
     <div class="post-body">
       {{ content }}
     </div>

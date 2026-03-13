@@ -1458,6 +1458,74 @@ img { max-width: 100%; height: auto; }
   color: var(--text-dim);
 }
 
+/* --- Steam Review Info Block --- */
+.steam-review-meta {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin: 1.5rem 0 2rem;
+  padding: 0.9rem 1.2rem;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--green-dim);
+  background: var(--green-subtle);
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+.steam-review-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.steam-review-label {
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+.steam-review-value {
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+}
+
+.steam-rating-recommended {
+  color: var(--green);
+}
+
+.steam-rating-not-recommended {
+  color: var(--magenta);
+}
+
+.steam-review-link {
+  margin-left: auto;
+  font-size: 0.78rem;
+  color: var(--green-dim);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  border: 1px solid var(--border);
+  padding: 0.3rem 0.7rem;
+  border-radius: 3px;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.steam-review-link:hover {
+  color: var(--green);
+  border-color: var(--green-dim);
+}
+
+[data-theme='light'] .steam-review-link {
+  color: var(--text-dim);
+}
+
+[data-theme='light'] .steam-rating-recommended {
+  color: #227722;
+}
+
 .post-body {
   font-size: 1rem;
   line-height: 1.8;
