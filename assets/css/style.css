@@ -66,10 +66,6 @@
 [data-theme='light'] .site-logo {
   color: #111111;
   text-shadow: none;
-  background: rgba(180, 180, 180, 0.8);
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  border: 1px solid rgba(100, 100, 100, 0.3);
 }
 
 [data-theme='light'] .site-logo .logo-sub {
@@ -204,9 +200,10 @@
 /* Hero section */
 [data-theme='light'] .hero {
   background: rgba(180, 180, 180, 0.85);
-  border-radius: 12px;
-  margin: 0 1rem;
-  border: 1px solid rgba(100, 100, 100, 0.3);
+  border-radius: 0;
+  margin: 0;
+  border: none;
+  width: 100%;
 }
 
 [data-theme='light'] .hero-title {
@@ -418,6 +415,7 @@ h1, h2, h3, h4 {
 img { max-width: 100%; height: auto; }
 
 ::selection { background: var(--green); color: var(--void); }
+[data-theme='light'] ::selection { background: #1a5c2e; color: #ffffff; }
 
 /* --- Black Hole Background --- */
 .black-hole-container {
