@@ -2,7 +2,7 @@
 layout: post
 title: "Breathedge - Steam Review (2021)"
 date: 2021-07-12
-categories: [reviews, gaming]
+categories: [reviews, gaming, space-travel]
 tags: [breathedge, review, survival, space, crafting, steam-review]
 author: GAM3RGAWD
 steam_app_id: 738520
