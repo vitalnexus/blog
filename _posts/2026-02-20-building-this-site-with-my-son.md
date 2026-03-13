@@ -12,6 +12,8 @@ Let me tell you about the most humbling experience of my recent life: sitting ne
 ** March 2026 update **
 Thanks to the efforts of my son, and some time investment of my own, I am now in charge. I've learned the skills to further development this website, add new integrations, and obviously create new content on this blog. In my opinion, it's much more than a blog now. It's my creation. With my mind, and the tools I use, I can now add anything I want to this site, and really make it my own, and really express my deep interest and enjoyment in gaming, technology, and adventures in space, time and fantastic realms that exist in games today.
 
+In the interest of transparency, I'll leave the rest of this blog post intact, as a reminder to me that I continue to be humble, and that I really am impressed by my son's skills as a creator, and a subject matter expert and user of AI tools.
+
 ## The Setup
 
 I had this idea. Simple enough -- build a personal blog. Space theme, dark mode, the works. I've been gaming for over a decade, streaming on YouTube, collecting achievements on Steam. I figured it was time to have a corner of the internet that wasn't just a profile page someone else designed.
