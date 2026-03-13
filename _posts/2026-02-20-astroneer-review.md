@@ -55,6 +55,6 @@ The learning curve is gentle but the game does not hold your hand with explanati
 
 2500+ hours. All planets completed. All achievements unlocked. And I'd still go back to start a new save. As a matter of fact, I own this game on Steam, and Xbox / Windows. That's what else I liked about System Era. It's available on everything - Playstation, Xbox, Steam, Windows, and Switch. 
 
-Astroneer is one of those rare games that's exactly what it wants to be, with no pretense and no filler. If you like exploration, building, and the idea of making an entire solar system your playground, this is the one.
+Astroneer is one of those rare games that's exactly what it wants to be, with no pretense and no filler. And if you've ever played with other toys like legos, lincoln logs, kinnect, or simiar things that slotted together, and you could see, hear and feel the design and engineering invested into the toy, you get that in Astroneer too. When you put research, materials or resources on platforms or in your backpack, there's a haptic connection and satisfying click sound that immerses you into the game. So if you want to some relaxed and fun gameplay that combines exploration, building, and the idea of making an entire solar system your playground, alone or with friends, this is the game for you. 
 
 **10 / 10** -- Would dig to the center of the planet again.
