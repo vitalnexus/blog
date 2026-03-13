@@ -49,7 +49,11 @@ Back in Early Access, there were some hilarious mishaps that occurred, with vehi
 
 ## The Nitpicks
 
-The learning curve is gentle but the game does not hold your hand with explanations. You'll spend some time figuring out which widget plugs into which platform. Late-game resource grinding can get repetitive -- once you know what you need, it's just a matter of going to get it. And the framerate used to dip when your bases get large and complex. Which reminds me, the early version had storms. I loved the storms, different planets had different storms, and some had debris in them that could kill your Astroneer, so you had to take shelter from the storm, even if you had dig a quick hole to hide in. Other storms would blow away or scatter any resources or research not secured on or in a platform. In some cases, if you either blew up your base, or had a really bad storm, you'd see resources or research suspended in mid air, and you'd have to build a structure or use soil and build a ramp to collect your items again. The storms were permanently removed due to framerate and crashes, depending on how large your game save happened to be at the time. Thankfully, those issues are all now resolved. So over the course of time, System Era removed everything I didn't like.
+The learning curve is gentle but the game does not hold your hand with explanations. You'll spend some time figuring out which widget plugs into which platform. Late-game resource grinding can get repetitive -- once you know what you need, it's just a matter of going to get it. And the framerate used to dip when your bases get large and complex.
+
+ Which reminds me, the early version had storms. I loved the storms, different planets had different storms, and some had debris in them that could kill your Astroneer, so you had to take shelter from the storm, even if you had dig a quick hole to hide in. Other storms would blow away or scatter any resources or research not secured on or in a platform. In some cases, if you either blew up your base, or had a really bad storm, you'd see resources or research suspended in mid air, and you'd have to build a structure or use soil and build a ramp to collect your items again.
+
+ The storms were permanently removed due to framerate and crashes, depending on how large your game save happened to be at the time. Thankfully, those issues are all now resolved. So over the course of time, System Era removed everything I didn't like.
 
 ## The Verdict
 
