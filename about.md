@@ -15,6 +15,20 @@ permalink: /about/
     </div>
   </div>
 
+  <div class="card" style="margin-bottom: 1.5rem;">
+    <div class="card-header">
+      <h3 class="card-title">Bio</h3>
+    </div>
+    <p>I'm a lifelong gamer, self-taught tinkerer, and chronic night owl who has been navigating digital worlds since the early days of dial-up. Born and raised in an era where you had to blow into the cartridge just to get the game to load, I've watched this industry evolve from pixelated side-scrollers to open-world universes that take hundreds of hours to explore. Gaming isn't just a hobby for me — it's the lens through which I experience creativity, community, and challenge. Outside of screens, I'm a parent, a problem-solver, and someone who firmly believes that the best ideas happen somewhere between midnight and 3 AM.</p>
+  </div>
+
+  <div class="card" style="margin-bottom: 1.5rem;">
+    <div class="card-header">
+      <h3 class="card-title">Web Design</h3>
+    </div>
+    <p>This site was built from scratch using Jekyll, hosted on GitHub Pages, and styled entirely with hand-written CSS — no templates, no page builders, no shortcuts. The terminal-green-on-void aesthetic isn't accidental; it's a deliberate nod to the CRT screens and command-line interfaces that shaped how I think about interfaces. I build things iteratively, often with the help of AI tools that I treat more like a pair programmer than an autopilot. Everything you see here — the black hole, the sun, the scrolling random read, the retro games — was a deliberate design and engineering decision. I'll be writing more about the process and the stack as this site evolves.</p>
+  </div>
+
   <div class="about-grid">
     <div class="card">
       <div class="card-header">
