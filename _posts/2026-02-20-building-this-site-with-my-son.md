@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Building This Site With My Son (or: How I Learned to Sit Still and Watch)"
+title: "Building This Site With My Son"
 date: 2026-02-20
 categories: [thoughts, technology]
 tags: [ai, web-development, family, frustration]
