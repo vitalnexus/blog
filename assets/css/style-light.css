@@ -19,10 +19,84 @@
   --header-bg: transparent;
   --mobile-nav-bg: rgba(255, 255, 255, 0.97);
 }
+/* --- Sun Container: white-to-yellow illuminated background --- */
+[data-theme='light'] .sun-container {
+  background: radial-gradient(ellipse at center,
+    #ffe54e   0%,
+    #ffeea0  12%,
+    #fff5cc  25%,
+    #fff9e8  45%,
+    #fffdf5  62%,
+    #ffffff  75%,
+    #ffffff  100%
+  );
+}
 
+/* --- Sun element overrides: organic morphing + softer streamers --- */
+[data-theme='light'] .streamer {
+  width: 8px;
+  opacity: 0.55;
+  filter: blur(7px);
+}
+
+[data-theme='light'] .streamer::before {
+  width: 30px;
+  filter: blur(12px);
+}
+
+[data-theme='light'] .sun-chromosphere {
+  border-radius: 48% 52% 45% 55% / 52% 48% 55% 45%;
+  width: 190px; height: 175px;
+  filter: blur(3px);
+  animation: sun-surface-morph 15s ease-in-out infinite;
+}
+
+[data-theme='light'] .sun-photosphere {
+  border-radius: 52% 48% 55% 45% / 45% 55% 48% 52%;
+  width: 175px; height: 165px;
+  animation: sun-surface-morph 10s ease-in-out infinite reverse;
+}
+
+[data-theme='light'] .sun-limb-darkening {
+  border-radius: 52% 48% 55% 45% / 45% 55% 48% 52%;
+}
+
+@keyframes sun-surface-morph {
+  0%, 100% { border-radius: 52% 48% 55% 45% / 45% 55% 48% 52%; }
+  33%       { border-radius: 48% 52% 45% 55% / 55% 45% 52% 48%; }
+  66%       { border-radius: 55% 45% 52% 48% / 48% 52% 45% 55%; }
+}
+
+/* --- White content panel: opaque when still, fades when scrolling --- */
+[data-theme='light'] .container {
+  background: rgba(255, 255, 255, 0.97);
+  border-radius: 12px;
+  box-shadow:
+    0 4px 40px rgba(255, 200, 40, 0.18),
+    0 2px 16px rgba(0, 0, 0, 0.07);
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
+  transition: opacity 0.5s ease;
+}
+
+/* Exclude parallax/posts page and Random Read page (they have their own backgrounds) */
+[data-theme='light'] body:has(.parallax-page) .container,
+[data-theme='light'] body:has(.rr-page) .container {
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: none;
+}
+
+/* Scroll-fade: container drops to 20% opacity while scrolling (background 80% visible) */
+[data-theme='light'] body.is-scrolling .container {
+  opacity: 0.2;
+}
 /* --- Body & General --- */
 [data-theme='light'] body {
-  background: #f0f0f0;
+  background: #ffffff;
   color: #111111;
 }
 
