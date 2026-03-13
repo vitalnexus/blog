@@ -65,7 +65,7 @@ Some people didn't like it when System Era added a currency into the game - Cubi
 
  The storms were permanently removed due to framerate and crashes, depending on how large your game save happened to be at the time. Thankfully, those issues are all now resolved. So over the course of time, System Era removed everything I didn't like. But I miss storms.
 
- ## System Era Softworks
+## System Era Softworks
 
  I can't really express how much I appreciate the game Astroneer without also talking about the people that made it. System Era Softworks, or System Era. Now, I've never met any of them in person. However, the Discord server, and the community there, can verify what I say here about how the System Era staff embraced community feedback and interacted with so many users including me - on that site, through podcasts, and indirectly through the outstanding documentary created by NoClip find it here: https://www.youtube.com/watch?v=tfUjl4owxTQ. NoClip is a YouTube channel that relies solely on Patreon subscribers and reviews games, game developers and is to this day - one of my favorite YouTube channels. Go check out Danny and his NoClip team at their channel: https://www.youtube.com/@NoclipDocs
 
