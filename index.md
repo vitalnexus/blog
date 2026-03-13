@@ -14,7 +14,7 @@ title: Look Into My Realm
     <div class="card-header">
       <h3 class="card-title">Welcome</h3>
     </div>
-    <p>Dark mode isn't a preference for me — it's a way of life. Every device, every app, every browser: dark, always. So when it came time to build this site, I still wanted to offer a light mode option, but I also wanted it to actually mean something. Hit the sun icon in the top right to switch to light mode, and you'll notice something: the moment you start scrolling, a sun blazes into view and makes the content nearly impossible to read — just like real sunlight on a screen. Stop scrolling, and the text becomes readable again. It's a small, deliberate design choice that captures exactly how light mode makes me feel. There's more to say about the design philosophy behind this site, and I'll get into that soon.</p>
+    <p>Dark mode is my choice. I had a light mode. You could click the sun icon in the top right to switch to light mode, and you'd notice that the moment you start scrolling, a sun blazes into view and makes the content impossible to read — just like real sunlight on a screen. Stop scrolling, and the text becomes readable again. It's a deliberate design choice I made to capture exactly how light mode makes me feel.</p>
   </div>
 
   <div class="grid grid-3" style="margin-bottom: 3rem;">
@@ -43,7 +43,7 @@ title: Look Into My Realm
 
   <div class="section-header">
     <h2 class="section-title">Latest Transmissions</h2>
-    <p class="section-subtitle">Dispatches from the cave</p>
+    <p class="section-subtitle">Dispatches from my realm</p>
     <div class="section-divider"></div>
   </div>
 
