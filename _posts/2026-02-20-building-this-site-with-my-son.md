@@ -31,7 +31,9 @@ Here's what I actually contributed to this project:
 5. I cackled
 6. I called him a dick
 
-That's it. That's my contribution. He's over there feeding prompts to AI, watching code materialize out of thin air, and I'm sitting next to him looking like someone just showed a caveman a lighter.
+That's it. That [was] my contribution - [see 2026 update below]. He's over there feeding prompts to AI, watching code materialize out of thin air, and I'm sitting next to him looking like someone just showed a caveman a lighter.
+
+2026 Update: New sections I've created on my own - Random Read, Library, Game Logs (in progress), the 404 error graphic, and many more posts, including my Steam game reviews, converted into posts that are expanded versions of what is on Steam.
 
 ## The Frustration is Real
 
