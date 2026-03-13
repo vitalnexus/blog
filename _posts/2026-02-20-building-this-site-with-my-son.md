@@ -30,10 +30,9 @@ Here's what I actually contributed to this project:
 4. I laughed
 5. I cackled
 6. I called him a dick
+7. 2026 Update: New sections I've created on my own - Random Read, Library, Game Logs (in progress), the 404 error graphic, and many more posts, including my Steam game reviews, converted into posts that are expanded versions of what is on Steam.
 
-That's it. That [was] my contribution - [see 2026 update below]. He's over there feeding prompts to AI, watching code materialize out of thin air, and I'm sitting next to him looking like someone just showed a caveman a lighter.
-
-2026 Update: New sections I've created on my own - Random Read, Library, Game Logs (in progress), the 404 error graphic, and many more posts, including my Steam game reviews, converted into posts that are expanded versions of what is on Steam.
+That's it. That [was] my contribution - [see 2026 update #7 above]. He's over there feeding prompts to AI, watching code materialize out of thin air, and I'm sitting next to him looking like someone just showed a caveman a lighter.
 
 ## The Frustration is Real
 
@@ -43,7 +42,7 @@ My son handled it with the patience of someone who grew up with this stuff. I ha
 
 ## What Got Built
 
-Look around. This whole site -- the animated black hole spinning in the background, the green-on-black cave dweller aesthetic, the gaming hub pulling stats from my actual Steam profile, the fully playable Defender and Steve's Gate games -- all of it was assembled while I sat there providing what I can only describe as "emotional support."
+Look around. This site -- the animated black hole spinning in the background, the green-on-black cave dweller aesthetic, the gaming hub pulling stats from my actual Steam profile, the fully playable Defender and Steve's Gate games -- all of it was assembled while I sat there providing what I can only describe as "emotional support."
 
 My only real design input was "make it dark, make it green, I don't like the light because I spend all my time cave dwelling." And you know what? They nailed it.
 
