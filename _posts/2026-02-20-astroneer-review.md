@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Astroneer Review - A Masterpiece of Exploration"
+title: "Astroneer - A Masterpiece of Exploration"
 date: 2026-02-20
 categories: [reviews, gaming]
 tags: [astroneer, review, exploration, sandbox, space]
