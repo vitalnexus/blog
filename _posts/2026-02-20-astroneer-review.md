@@ -19,7 +19,13 @@ During the Early Access and even after 1.0 release, I started new games for each
 
 ## What Is It
 
-Astroneer is a space exploration sandbox by System Era Softworks. You land on an alien planet with nothing but a small shelter and a terrain tool, and from there you dig, build, explore, and eventually colonize an entire solar system. No combat. No enemies trying to murder you every five seconds. Just you, the terrain, and an absolutely enormous universe to make your own.
+Astroneer is a space exploration sandbox by System Era Softworks. You land on an alien planet with nothing but a starting shelter (habitat), a landing pad (that has a mission objectives interface connected to it) and you - as an Astroneer, with a backpack, small oxygen tank, a limited battery pack, and your indespensible terrain tool.
+
+Using your terrain tool you dig up resources, which can be used to build platforms, devices, and other more complex materials that are made from more than one resource. You can also gather research, both large and small, to open up new recipes that you unlock.
+
+Meanwhile you start on the most habitable planet and dig, build, explore, and eventually colonize the entire solar system, which consists of several planets, all of which are different biomes, have different hazards, and are progressively harder to survive on.
+
+By design, this game has no combat. No enemies trying to murder you every five seconds. There's no weapons you can find or craft. But there are hazards like running out of oxygen, falling death, and being terminated by agressive or deadly plants, gases and a combination of attacks. But I really like that it is just you, the Astroneer, exploring the terrain, and a challenging little universe to make your own.
 
 ## Why It Works
 
