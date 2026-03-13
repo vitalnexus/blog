@@ -13,6 +13,8 @@ I feel priviledged to have been able to even assist in the building of the origi
 
 During the Early Access and even after 1.0 release, I started new games for each new event, and to me, being a person that was 9 when I watched the actual landing on the moon, I got chills and was transported back to that day when in game, you can find the actual lander, and then take a photo of your Astroneer on the lander, and you hear the actual audio of the moon landing taking place. Seeing the moon landing live on TV was truly the most memorable occasion of my life, and being able to revisit that era in Astroneer, was really what leads me to keep coming back to this game.
 
+This game also introduced me to the aspect of speedrunning in games. Back when I was first learning how to live stream, setting up my Elgato Streamdeck, webcam and microphone, I also taught myself how to add metrics to track and submit my speed runs in games. I first did that with Astroneer. So it really does give me lots of memories and enjoyment jumping back into the fantastic, well designed and immersive game.
+
 2026 Update: System Era is still developing DLC for it. The latest update (Megatech) is a paid one, but you can read more about that one in a future post here. Of course, The Megatech Update was after the Glitchwalkers update, which is another update that I've played and also merits its own post. But for now, let me just focus on the original game concept.
 
 
