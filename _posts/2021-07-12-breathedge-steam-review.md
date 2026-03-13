@@ -20,7 +20,7 @@ On Steam, I didn't really give any details about the game because if you're on S
 
 You are in space, stranded. You have limited oxygen, and are floating in space, literally. You must survive by collecting items and crafting tools. You have many different hazards, including limited oxygen, electrocuting yourself, and being attacked by weird enemies. It has an interesting sense of humor, and isn't based on reality. You carry a chicken with you who is quite handy. After progressing through many, many obstacles, you can eventually craft a base and find vehicles to make travel easier. 
 
-So far I've completed this game twice. Once for enjoyment of the experience. And again to get all 100% achievements. I also made it about 32 hours on Impossible, and I'm planning to do another attempt at it someday. Thinking of creating a guide for the game on Steam, but I'm also waiting to see if the developers ever release BreathEdge 2. Not going to hold breath on that (pun intended).
+So far I've completed this game twice. Once for enjoyment of the experience. And again to get all 100% achievements. I also made it about 32 hours on Impossible, and I'm planning to do another attempt at it someday. Thinking of creating a guide for the game on Steam, but I'm also waiting to see if the developers ever release BreathEdge 2. Not going to hold my breath on that (pun intended).
 
 I highly recommend this game if you don't mind collecting resources as you uncover a very unusual story, and don't have too much issue with dizziness floating through space.
 
