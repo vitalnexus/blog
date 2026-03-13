@@ -69,10 +69,10 @@ Some people didn't like it when System Era added a currency into the game - Cubi
 
  I can't really express how much I appreciate the game Astroneer without also talking about the people that made it. System Era Softworks, or System Era. Now, I've never met any of them in person. However, the Discord server, and the community there, can verify what I say here about how the System Era staff embraced community feedback and interacted with so many users including me - on that site, through podcasts, and originally through Vlogs and live streams posted on their website, announced on Twitter (now X), and in Discord.
  
-  Joe Tirado, the communications guy, was the one that would update the community with updates, hinting about things using a leek emoji, (code of leaks), and there were other "insider" things that the community understood only if you were active there quite often. 
+  Joe Tirado, the communications guy, was the one that would update the community with updates, hinting about things using a leek emoji, (code for leaks), and there were other "insider" things that the community understood only if you were active there quite often. 
   
   Another way I learned about the staff at System Era and their backgrounds was indirectly through the outstanding documentary created by NoClip. Find it at: https://www.youtube.com/watch?v=tfUjl4owxTQ. NoClip by the way is a YouTube channel that relies solely on Patreon subscribers and reviews games, game developers and is to this day - one of my favorite YouTube channels. Go check out Danny and his NoClip team at their channel: https://www.youtube.com/@NoclipDocs
-  
+
 Finally, if you are a visual person and loves data and statistics like me, then you should definitely check out this post from Joe Tirado, it has an infographic that includes stats  found here: https://blog.systemera.net/three-years-of-astroneer-by-the-numbers-589282826ee1 
 
 ## The Verdict
