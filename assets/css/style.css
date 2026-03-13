@@ -141,19 +141,30 @@
 }
 
 [data-theme='light'] body:has(.parallax-page) .site-nav a {
-  color: #b0ffb0;
+  color: #00FF41;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  border: 1px solid rgba(0, 255, 65, 0.35);
+  background: rgba(0, 0, 0, 0.35);
+  text-shadow: 0 0 6px rgba(0, 255, 65, 0.5);
+  box-shadow: 0 0 8px rgba(0, 255, 65, 0.2), inset 0 0 4px rgba(0, 255, 65, 0.06);
+  transition: all 0.25s ease;
 }
 
 [data-theme='light'] body:has(.parallax-page) .site-nav a:hover {
-  color: #00FF41;
-  background: rgba(0, 255, 65, 0.12);
-  border-color: rgba(0, 255, 65, 0.35);
-  text-shadow: 0 0 8px rgba(0, 255, 65, 0.7), 0 0 16px rgba(0, 255, 65, 0.4);
-  box-shadow: 0 0 14px rgba(0, 255, 65, 0.25), inset 0 0 8px rgba(0, 255, 65, 0.08);
+  color: #ffffff;
+  background: rgba(0, 255, 65, 0.18);
+  border-color: rgba(0, 255, 65, 0.75);
+  text-shadow: 0 0 10px rgba(0, 255, 65, 0.9), 0 0 20px rgba(0, 255, 65, 0.5);
+  box-shadow: 0 0 18px rgba(0, 255, 65, 0.45), 0 0 6px rgba(0, 255, 65, 0.3), inset 0 0 10px rgba(0, 255, 65, 0.1);
 }
 
 [data-theme='light'] body:has(.parallax-page) .site-nav a.active {
-  color: #7adf7a;
+  color: #00FF41;
+  border-color: rgba(0, 255, 65, 0.55);
+  background: rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 8px rgba(0, 255, 65, 0.65);
+  box-shadow: 0 0 12px rgba(0, 255, 65, 0.3), inset 0 0 6px rgba(0, 255, 65, 0.08);
 }
 
 [data-theme='light'] body:has(.parallax-page) .site-logo {
