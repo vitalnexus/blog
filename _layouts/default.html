@@ -24,6 +24,13 @@
   <link rel="icon" href="https://yt3.googleusercontent.com/EWIbmC28dR4JnEUXg8rBjPKEFEXUrfkVy0_BDXcr_dlSzAbHnkfu5h0Vid3brKEWYYcYn-DV7Q=s160-c-k-c0x00ffffff-no-rj" type="image/png">
   <link rel="stylesheet" href="{{ '/assets/css/style-dark.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/style-light.css' | relative_url }}">
+
+  {% assign root_url = site.url | default: site.default_site_url %}
+  {% assign root_baseurl = site.baseurl | default: '' %}
+  {% assign full_root = root_url | append: root_baseurl %}
+  <link rel="canonical" href="{{ full_root }}{{ page.url | replace: 'index.html', '' }}" />
+  <meta property="og:url" content="{{ full_root }}{{ page.url | replace: 'index.html', '' }}" />
+
   {% feed_meta %}
   {% seo %}
 </head>

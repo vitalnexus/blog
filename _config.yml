@@ -1,8 +1,17 @@
 title: Look Into My Realm
 description: Gaming, Tech, and Adventures from the void - by GAM3RGAWD
 author: GAM3RGAWD
-url: https://vitalnexus.github.io
-baseurl: /blog
+
+# Site URL logic:
+# - If you use a custom domain, set `url` to your domain, e.g. https://yourdomain.com.
+# - If not set, it defaults to GitHub Pages username site.
+# - `baseurl` is empty for root deployment (username.github.io or custom domain).
+url: "https://gam3rgawd.com"
+baseurl: ""
+
+# This value is a fallback for templates if you choose to leave url blank.
+# It is also a reference URL for local dev and SEO metadata.
+default_site_url: "https://vitalnexus.github.io"
 
 # Jekyll settings
 markdown: kramdown
