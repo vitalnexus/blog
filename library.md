@@ -7,6 +7,7 @@ permalink: /library/
 <div class="hero" style="padding: 3rem 1rem 2rem;">
   <h1 class="hero-title glitch" data-text="Library">Library</h1>
   <p class="hero-tagline">My Steam favorites — games that earned a permanent spot</p>
+  <p class="hero-notice">Clicking on a game icon will launch into the Steam Store page for that game.</p>
 </div>
 
 <div class="container">
