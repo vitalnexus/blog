@@ -43,7 +43,7 @@ permalink: /about/
         <h3 class="card-title">The Vibe</h3>
       </div>
       <p>This blog is my corner of the void. I write about games I play, tech that catches my eye, thoughts that rattle around at 3 AM, and occasionally the fact that space travel would be pretty cool.</p>
-      <p style="margin-top: 1rem;">Dark themes only. The light burns.  Not a vampire -- it's just a survival mechanism.</p>
+      <p style="margin-top: 1rem;">Dark themes only. The Solar rays burn so try the light mode and get a taste of the blinding white brilliance.  For me its always dark mode -- it's my survival mechanism.</p>
     </div>
   </div>
 
