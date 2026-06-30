@@ -11,6 +11,21 @@ permalink: /xbox/
     <p class="hero-tagline">39,176 Gamerscore / Game Pass Ultimate / Xbox Insider</p>
   </div>
 
+  <div class="grid grid-2" style="margin-bottom: 1.5rem;">
+    <a href="/gaming/" style="text-decoration: none;">
+      <div class="card" style="text-align: center; cursor: pointer;">
+        <p style="color: var(--text-dim); font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 0.25rem;">&#x25A1; Navigate</p>
+        <h3 style="margin: 0;">Steam Gaming</h3>
+        <p style="color: var(--text-dim); font-size: 0.85rem; margin-top: 0.25rem;">Steam library, stats &amp; reviews</p>
+      </div>
+    </a>
+    <div class="card" style="text-align: center; border-color: var(--green); background: var(--green-subtle);">
+      <p style="color: var(--green); font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 0.25rem;">&#x25CF; Current</p>
+      <h3 style="margin: 0; color: var(--green);">Xbox Gaming</h3>
+      <p style="color: var(--text-dim); font-size: 0.85rem; margin-top: 0.25rem;">Xbox library, Game Pass &amp; Gamerscore</p>
+    </div>
+  </div>
+
   <div class="profile-banner">
     <img src="https://yt3.googleusercontent.com/EWIbmC28dR4JnEUXg8rBjPKEFEXUrfkVy0_BDXcr_dlSzAbHnkfu5h0Vid3brKEWYYcYn-DV7Q=s160-c-k-c0x00ffffff-no-rj" alt="GAM3RGAWD" class="profile-avatar">
     <div class="profile-info">

@@ -405,10 +405,52 @@
     });
   }
 
+  // --- Dropdown Navigation ---
+  function initDropdownNav() {
+    var wraps = document.querySelectorAll('.nav-dropdown-wrap');
+    wraps.forEach(function (wrap) {
+      var timer = null;
+
+      function openMenu() {
+        clearTimeout(timer);
+        wrap.classList.add('dropdown-open');
+      }
+
+      function closeMenu() {
+        timer = setTimeout(function () {
+          wrap.classList.remove('dropdown-open');
+        }, 150);
+      }
+
+      wrap.addEventListener('mouseenter', openMenu);
+      wrap.addEventListener('mouseleave', closeMenu);
+
+      var toggle = wrap.querySelector('.nav-dropdown-toggle');
+      if (toggle) {
+        toggle.addEventListener('click', function (e) {
+          e.stopPropagation();
+          if (wrap.classList.contains('dropdown-open')) {
+            clearTimeout(timer);
+            wrap.classList.remove('dropdown-open');
+          } else {
+            openMenu();
+          }
+        });
+      }
+    });
+
+    document.addEventListener('click', function () {
+      document.querySelectorAll('.nav-dropdown-wrap.dropdown-open').forEach(function (wrap) {
+        wrap.classList.remove('dropdown-open');
+      });
+    });
+  }
+
   // --- Init ---
   function init() {
     createStarField();
     initNavigation();
+    initDropdownNav();
     initThemeToggle();
     initMatrixEasterEgg();
     initGlitchText();
