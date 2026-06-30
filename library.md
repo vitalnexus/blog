@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Library
+title: Steam Library
 permalink: /library/
 ---
 
 <div class="hero" style="padding: 3rem 1rem 2rem;">
-  <h1 class="hero-title glitch" data-text="Library">Library</h1>
+  <h1 class="hero-title glitch" data-text="Steam Library">Steam Library</h1>
   <p class="hero-tagline">My Steam favorites — games that earned a permanent spot</p>
   <p class="hero-notice">Click a game graphic to open (in a new tab) the Steam Store page for that game.</p>
 </div>
