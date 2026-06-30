@@ -8,7 +8,7 @@ permalink: /gaming/
 
   <div class="hero" style="padding: 3rem 1rem 2rem;">
     <h1 class="hero-title glitch" data-text="Gaming Hub">Gaming Hub</h1>
-    <p class="hero-tagline">12+ years in the void / 822 achievements / 4 perfect games</p>
+    <p class="hero-tagline">13+ years in the void / 830 achievements / 4 perfect games</p>
   </div>
 
   <div class="profile-banner">
@@ -33,7 +33,7 @@ permalink: /gaming/
       <div class="stat-row"><span class="stat-label">Total XP</span><span class="stat-value">3,676</span></div>
       <div class="stat-row"><span class="stat-label">Member Since</span><span class="stat-value">2013</span></div>
       <div class="stat-row"><span class="stat-label">Games Owned</span><span class="stat-value">50+</span></div>
-      <div class="stat-row"><span class="stat-label">Achievements</span><span class="stat-value">822</span></div>
+      <div class="stat-row"><span class="stat-label">Achievements</span><span class="stat-value">830</span></div>
       <div class="stat-row"><span class="stat-label">Perfect Games</span><span class="stat-value">4</span></div>
       <div class="stat-row"><span class="stat-label">Avg Completion</span><span class="stat-value">43%</span></div>
     </div>
@@ -96,6 +96,39 @@ permalink: /gaming/
       <div class="badge-row">
         <span class="badge badge-gold">100% Complete</span>
         <span class="badge badge-green">Perfect Game</span>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="section-title" style="font-size: 1.1rem; margin: 0 0 0.75rem; letter-spacing: 0.15em; text-transform: uppercase;">
+    <span style="color: var(--green); opacity: 0.6;">&#x2014;&nbsp;</span>Recently Played<span style="color: var(--green); opacity: 0.6;">&nbsp;&#x2014;</span>
+  </h3>
+
+  <div class="grid grid-3" style="margin-bottom: 2.5rem;">
+    <div class="game-card">
+      <h3 class="game-card-title"><a href="/reviews/gaming/risk-global-domination-2026-review/" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;">Risk: Global Domination</a></h3>
+      <p class="game-card-genre">Strategy / Board Game</p>
+      <div class="badge-row">
+        <span class="badge badge-green">1,000+ hrs</span>
+        <span class="badge">Solo vs Bots</span>
+      </div>
+    </div>
+
+    <div class="game-card">
+      <h3 class="game-card-title"><a href="/reviews/gaming/subnautica-2-early-access-review/" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;">Subnautica 2</a></h3>
+      <p class="game-card-genre">Survival / Exploration</p>
+      <div class="badge-row">
+        <span class="badge badge-gold">Early Access</span>
+        <span class="badge badge-green">Co-op Ready</span>
+      </div>
+    </div>
+
+    <div class="game-card">
+      <h3 class="game-card-title"><a href="/reviews/gaming/space-travel/starseeker-beta-review/" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;">Starseeker</a></h3>
+      <p class="game-card-genre">Exploration / Cooperative</p>
+      <div class="badge-row">
+        <span class="badge">Beta Tested</span>
+        <span class="badge badge-green">By System Era</span>
       </div>
     </div>
   </div>
