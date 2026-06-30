@@ -61,6 +61,16 @@ permalink: /library/
     </div>
 
     <div class="lib-card">
+      <a href="https://store.steampowered.com/app/2119150" target="_blank" rel="noopener">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/2119150/library_600x900.jpg" alt="Diablo IV" loading="lazy">
+      </a>
+      <div class="lib-info">
+        <p class="lib-title">Diablo IV</p>
+        <a class="lib-link" href="https://store.steampowered.com/app/2119150" target="_blank" rel="noopener">View on Steam &rarr;</a>
+      </div>
+    </div>
+
+    <div class="lib-card">
       <a href="https://store.steampowered.com/app/377160" target="_blank" rel="noopener">
         <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/377160/library_600x900.jpg" alt="Fallout 4" loading="lazy">
       </a>
@@ -77,6 +87,16 @@ permalink: /library/
       <div class="lib-info">
         <p class="lib-title">Grand Theft Auto V</p>
         <a class="lib-link" href="https://store.steampowered.com/app/271590" target="_blank" rel="noopener">View on Steam &rarr;</a>
+      </div>
+    </div>
+
+    <div class="lib-card">
+      <a href="https://store.steampowered.com/app/962130" target="_blank" rel="noopener">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/962130/library_600x900.jpg" alt="Grounded" loading="lazy">
+      </a>
+      <div class="lib-info">
+        <p class="lib-title">Grounded</p>
+        <a class="lib-link" href="https://store.steampowered.com/app/962130" target="_blank" rel="noopener">View on Steam &rarr;</a>
       </div>
     </div>
 
@@ -167,16 +187,6 @@ permalink: /library/
       <div class="lib-info">
         <p class="lib-title">Rust</p>
         <a class="lib-link" href="https://store.steampowered.com/app/252490" target="_blank" rel="noopener">View on Steam &rarr;</a>
-      </div>
-    </div>
-
-    <div class="lib-card">
-      <a href="https://store.steampowered.com/app/356500" target="_blank" rel="noopener">
-        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/356500/library_600x900.jpg" alt="STAR WARS Galactic Battlegrounds Saga" loading="lazy">
-      </a>
-      <div class="lib-info">
-        <p class="lib-title">STAR WARS&#8482; Galactic Battlegrounds Saga</p>
-        <a class="lib-link" href="https://store.steampowered.com/app/356500" target="_blank" rel="noopener">View on Steam &rarr;</a>
       </div>
     </div>
 
