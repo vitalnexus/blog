@@ -17,14 +17,24 @@ title: Look Into My Realm
     <p>Dark mode is my choice. There is a light mode I never use. You click the sun icon in the top right to switch to light mode, and you'd notice that the moment you start scrolling, a sun blazes into view and makes the content impossible to read — just like real sunlight on a screen. Stop scrolling, and the text becomes readable again. It's a deliberate design choice I made to capture exactly how light mode makes me feel. If it's still there - unless I removed it. Use it while it lasts. Fade to black.</p>
   </div>
 
-  <div class="grid grid-3" style="margin-bottom: 3rem;">
+  <div class="grid grid-2" style="margin-bottom: 1.5rem;">
     <div class="card">
       <div class="card-header">
-        <h3 class="card-title">Gaming Hub</h3>
+        <h3 class="card-title">Steam Gaming</h3>
       </div>
-      <p class="post-excerpt">Steam stats, favorites from my game library, and other data from my 12+ years of gaming on Steam.</p>
-      <p style="margin-top: 1rem;"><a href="{{ '/gaming' | relative_url }}">Enter the hub &rarr;</a></p>
+      <p class="post-excerpt">13+ years in the void &mdash; 830 achievements, 4 perfect games, 43% avg completion, Steam Level 22.</p>
+      <p style="margin-top: 1rem;"><a href="{{ '/gaming' | relative_url }}">Enter Steam hub &rarr;</a></p>
     </div>
+    <div class="card">
+      <div class="card-header">
+        <h3 class="card-title">Xbox Gaming</h3>
+      </div>
+      <p class="post-excerpt">39,176 Gamerscore &mdash; Game Pass Ultimate, Xbox Insider, 1 perfect game, 115 friends.</p>
+      <p style="margin-top: 1rem;"><a href="{{ '/xbox' | relative_url }}">Enter Xbox hub &rarr;</a></p>
+    </div>
+  </div>
+
+  <div class="grid grid-2" style="margin-bottom: 3rem;">
     <div class="card">
       <div class="card-header">
         <h3 class="card-title">AI Games</h3>
