@@ -6,7 +6,7 @@ categories: [reviews, gaming]
 tags: [strategy, solo-play-vs-bots, risk]
 author: GAM3RGAWD
 ---
-I first reviewed Risk: Global Domination in Steam reviews when I purchased it on Steam back in 2016. I also updated that review again in 2020. You can find that post here at this link.
+I first reviewed Risk: Global Domination in Steam reviews when I purchased it on Steam back in 2016. I also updated that review again in 2020. You can find [that post here at this link](https://gam3rgawd.com/reviews/gaming/risk-global-domination-steam-review/).
 
 But now, six years later, I'm still playing Risk:GD in 2026. As of the time of this writing, the game has had many new features added. There have been a bunch of emotes, new avatars, new maps of course, but also a Sandbox mode. The Sandbox mode is where you can fully customize any map you own, adjust starting troops, where frozen lands are located, and then play those maps and/or share them in the community. That's a great addition. The only downside is that it does cost money to access it. The cost is currently $14.99 per year, billed annually. As of June 30 (today), the cost is on sale for $9.99 per year, billed annually. Go buy it! Essentially, it is simple to purchase since you buy it from your Steam wallet.
 
