@@ -61,12 +61,12 @@ permalink: /library/
     </div>
 
     <div class="lib-card">
-      <a href="https://store.steampowered.com/app/2119150" target="_blank" rel="noopener">
-        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/2119150/library_600x900.jpg" alt="Diablo IV" loading="lazy">
+      <a href="https://store.steampowered.com/app/2344520" target="_blank" rel="noopener">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/2344520/library_600x900.jpg" alt="Diablo IV" loading="lazy">
       </a>
       <div class="lib-info">
-        <p class="lib-title">Diablo IV</p>
-        <a class="lib-link" href="https://store.steampowered.com/app/2119150" target="_blank" rel="noopener">View on Steam &rarr;</a>
+        <p class="lib-title">Diablo&#174; IV</p>
+        <a class="lib-link" href="https://store.steampowered.com/app/2344520" target="_blank" rel="noopener">View on Steam &rarr;</a>
       </div>
     </div>
 
